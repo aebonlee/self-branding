@@ -258,6 +258,27 @@ D:\self-branding/
 | 2026-03-13 | `5d17f1e` | fix: base URL '/' 변경 (커스텀 도메인 대응) |
 | 2026-03-13 | `da84b7a` | update: BrandingWeek9-10, ToolAI, ToolDesign 콘텐츠 보강 |
 | 2026-03-13 | `725d1cb` | fix: CNAME 도메인 수정 (self-branding.dreamitbiz.com) |
+| 2026-03-13 | `9c051ac` | docs: 개발일지 업데이트 및 Supabase SQL 설정 파일 추가 |
+| 2026-03-13 | `ebe5f7a` | feat: Open Graph 메타 태그 추가 및 BASE URL 수정 |
+
+---
+
+## Supabase 설정 점검 결과 (2026-03-13)
+
+### 점검 요약
+
+| 항목 | 상태 | 세부 내용 |
+|------|------|-----------|
+| **테이블 (10개)** | ✅ 완전 | 코드에서 사용하는 모든 테이블이 SQL에 정의됨 |
+| **RPC 함수 (8개)** | ✅ 수정완료 | `check_user_status` 누락 → 추가 완료 |
+| **RLS 정책** | ✅ 수정완료 | 댓글 테이블 UPDATE 정책 4개 추가 |
+| **인증** | ✅ 완전 | Google, Kakao, Email 모두 설정됨 |
+| **환경변수 (5개)** | ✅ 완전 | 모두 문서화됨 |
+| **스토리지** | ℹ️ 미사용 | 파일 업로드 기능 없음 (URL 방식) |
+
+### 수정 내역
+1. **`check_user_status` RPC 함수 추가** — AuthContext에서 호출하나 SQL에 미정의 → 추가
+2. **댓글 테이블 UPDATE 정책 4건 추가** — comments, gallery_comments, portfolio_comments, websites_comments
 
 ---
 
@@ -288,6 +309,7 @@ D:\self-branding/
 | `increment_portfolio_views` | item_id (BIGINT) | 포트폴리오 조회수 +1 |
 | `increment_website_views` | item_id (BIGINT) | 웹사이트 조회수 +1 |
 | `update_last_login` | target_user_id (UUID) | 최근 접속 시간 갱신 |
+| `check_user_status` | target_user_id (UUID), current_domain (TEXT) | 사용자 차단/정지 상태 확인 |
 | `handle_new_user` | (트리거) | 신규 가입 시 user_profiles 자동 생성 |
 
 ### 인증 설정 (Supabase Auth)

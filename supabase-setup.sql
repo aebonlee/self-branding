@@ -224,6 +224,27 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
+-- 사용자 차단/정지 상태 확인 (AuthContext에서 호출)
+CREATE OR REPLACE FUNCTION check_user_status(
+  target_user_id UUID,
+  current_domain TEXT
+)
+RETURNS TABLE(status TEXT, reason TEXT, suspended_until TIMESTAMPTZ) AS $$
+BEGIN
+  RETURN QUERY
+  SELECT
+    CASE
+      WHEN up.is_blocked THEN 'blocked'
+      WHEN up.is_suspended THEN 'suspended'
+      ELSE 'active'
+    END AS status,
+    ''::TEXT AS reason,
+    NULL::TIMESTAMPTZ AS suspended_until
+  FROM user_profiles up
+  WHERE up.id = target_user_id;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
 -- ============================================================
 -- RLS (Row Level Security) 정책
 -- ============================================================
@@ -245,6 +266,7 @@ CREATE POLICY "Authors can delete own posts" ON posts FOR DELETE USING (auth.uid
 ALTER TABLE comments ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Anyone can read comments" ON comments FOR SELECT USING (TRUE);
 CREATE POLICY "Authenticated users can create comments" ON comments FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
+CREATE POLICY "Authors can update own comments" ON comments FOR UPDATE USING (auth.uid() = author_id);
 CREATE POLICY "Authors can delete own comments" ON comments FOR DELETE USING (auth.uid() = author_id);
 
 -- lectures
@@ -265,6 +287,7 @@ CREATE POLICY "Authors can delete own gallery" ON gallery FOR DELETE USING (auth
 ALTER TABLE gallery_comments ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Anyone can read gallery comments" ON gallery_comments FOR SELECT USING (TRUE);
 CREATE POLICY "Authenticated can create gallery comments" ON gallery_comments FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
+CREATE POLICY "Authors can update own gallery comments" ON gallery_comments FOR UPDATE USING (auth.uid() = author_id);
 CREATE POLICY "Authors can delete own gallery comments" ON gallery_comments FOR DELETE USING (auth.uid() = author_id);
 
 -- portfolio
@@ -278,6 +301,7 @@ CREATE POLICY "Authors can delete own portfolio" ON portfolio FOR DELETE USING (
 ALTER TABLE portfolio_comments ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Anyone can read portfolio comments" ON portfolio_comments FOR SELECT USING (TRUE);
 CREATE POLICY "Authenticated can create portfolio comments" ON portfolio_comments FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
+CREATE POLICY "Authors can update own portfolio comments" ON portfolio_comments FOR UPDATE USING (auth.uid() = author_id);
 CREATE POLICY "Authors can delete own portfolio comments" ON portfolio_comments FOR DELETE USING (auth.uid() = author_id);
 
 -- websites
@@ -291,6 +315,7 @@ CREATE POLICY "Authors can delete own websites" ON websites FOR DELETE USING (au
 ALTER TABLE websites_comments ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Anyone can read website comments" ON websites_comments FOR SELECT USING (TRUE);
 CREATE POLICY "Authenticated can create website comments" ON websites_comments FOR INSERT WITH CHECK (auth.uid() IS NOT NULL);
+CREATE POLICY "Authors can update own website comments" ON websites_comments FOR UPDATE USING (auth.uid() = author_id);
 CREATE POLICY "Authors can delete own website comments" ON websites_comments FOR DELETE USING (auth.uid() = author_id);
 
 -- ============================================================
