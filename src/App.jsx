@@ -11,7 +11,7 @@ function App() {
       <LanguageProvider>
         <AuthProvider>
           <ToastProvider>
-            <Router basename="/self-branding">
+            <Router>
               <div className="App">
                 <Routes>
                   <Route path="*" element={<PublicLayout />} />

@@ -16,7 +16,7 @@ const copy404Plugin = () => ({
 
 export default defineConfig({
   plugins: [react(), copy404Plugin()],
-  base: '/self-branding/',
+  base: '/',
   server: {
     port: 5175,
     open: true
