@@ -1,0 +1,67 @@
+import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
+import useAOS from '../hooks/useAOS';
+import SEOHead from '../components/SEOHead';
+
+const PracticeGuide = () => {
+  const { t } = useLanguage();
+  useAOS();
+
+  const practices = [
+    { week: '1~2주차', title: '브랜드 발견', icon: '🔍', desc: '자기분석과 핵심가치 발견', tasks: ['SWOT 분석 작성', '브랜드 미션 스테이트먼트 작성', '경쟁 브랜드 3개 분석'] },
+    { week: '3~4주차', title: '브랜드 설계', icon: '🎨', desc: '아이덴티티와 타겟 설정', tasks: ['타겟 페르소나 3개 작성', 'Canva로 로고 제작', '브랜드 컬러 팔레트 선정'] },
+    { week: '5~6주차', title: '디지털 전략', icon: '📱', desc: 'SEO와 SNS 마케팅 실습', tasks: ['키워드 리서치 실습', 'Instagram 콘텐츠 5개 기획', 'YouTube 영상 기획안 작성'] },
+    { week: '7~8주차', title: '콘텐츠 & PR', icon: '✍️', desc: '콘텐츠 제작과 홍보', tasks: ['블로그 포스트 3개 작성', '보도자료 1건 작성', '위기관리 시나리오 작성'] },
+    { week: '9~10주차', title: '실전 구축', icon: '💼', desc: '포트폴리오와 프레즌스', tasks: ['LinkedIn 프로필 최적화', '포트폴리오 웹사이트 기획', '개인 브랜드 소개 영상 제작'] },
+    { week: '11~12주차', title: '분석 & 발표', icon: '🚀', desc: '성과 분석과 최종 프로젝트', tasks: ['GA4 대시보드 설정', '마케팅 KPI 보고서 작성', '최종 브랜딩 프로젝트 발표'], isExam: true },
+  ];
+
+  return (
+    <>
+      <SEOHead title="실습안내" path="/branding/practice-guide" />
+      <section className="page-header">
+        <div className="container">
+          <h1>실습안내</h1>
+          <p>주차별 실습 과제와 제출 안내</p>
+        </div>
+      </section>
+      <section className="lesson-content section">
+        <div className="container">
+          <div className="lesson-body">
+            <h2>실습 개요</h2>
+            <p>각 주차별 실습 과제를 통해 이론을 실전에 적용합니다. 모든 과제는 최종 포트폴리오에 포함됩니다.</p>
+
+            <div className="practice-grid">
+              {practices.map((p, i) => (
+                <div key={i} className={`practice-card${p.isExam ? ' exam-card' : ''}`} data-aos="fade-up" data-aos-delay={i * 50}>
+                  <div className="practice-card-header">
+                    <span className="curriculum-step">{p.week}</span>
+                    <h3 className="practice-card-title">{p.icon} {p.title}</h3>
+                    <p className="practice-card-desc">{p.desc}</p>
+                  </div>
+                  <ol className="practice-task-list">
+                    {p.tasks.map((task, j) => <li key={j}>{task}</li>)}
+                  </ol>
+                </div>
+              ))}
+            </div>
+
+            <h2>제출 방법</h2>
+            <ul>
+              <li>각 과제는 커뮤니티 게시판 또는 포트폴리오 섹션에 제출</li>
+              <li>피드백은 댓글을 통해 제공</li>
+              <li>최종 프로젝트는 발표 형식으로 진행</li>
+            </ul>
+
+            <div className="lesson-nav">
+              <Link to="/branding/syllabus" className="lesson-nav-btn prev">← 강의계획서</Link>
+              <Link to="/lessons" className="lesson-nav-btn next">커리큘럼 시작 →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default PracticeGuide;
