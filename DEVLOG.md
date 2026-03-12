@@ -8,7 +8,7 @@
 | **설명** | 기업홍보부터 개인브랜딩까지 - 셀프 브랜딩 마케팅 종합 학습 플랫폼 |
 | **기술 스택** | React 19 + Vite 7 + React Router Dom 7 + Supabase |
 | **배포** | GitHub Pages (aebonlee/self-branding) |
-| **도메인** | selfbranding.dreamitbiz.com |
+| **도메인** | self-branding.dreamitbiz.com |
 | **참고 프로젝트** | D:\koreatech (컴퓨팅 사고 학습 사이트) |
 
 ---
@@ -241,6 +241,73 @@ D:\self-branding/
 - **GitHub Repository**: aebonlee/self-branding
 - **Branch**: main
 - **배포 방식**: GitHub Pages (gh-pages branch via `npm run deploy`)
-- **커스텀 도메인**: selfbranding.dreamitbiz.com (CNAME)
+- **커스텀 도메인**: self-branding.dreamitbiz.com (CNAME)
 - **빌드 명령어**: `npm run build`
 - **개발 서버**: `npm run dev` (포트 5175)
+
+---
+
+## 변경 이력
+
+| 날짜 | 커밋 | 내용 |
+|------|------|------|
+| 2026-03-13 | `7019dd4` | feat: 셀프 브랜딩 마케팅 학습 사이트 초기 구현 (92파일) |
+| 2026-03-13 | `3ef0315` | update: BrandingWeek9, Week12 콘텐츠 보강 |
+| 2026-03-13 | `8401ea0` | chore: gh-pages deploy 스크립트 추가 |
+| 2026-03-13 | `30e1187` | update: BrandingWeek6, ToolAds, ToolEmail 콘텐츠 보강 |
+| 2026-03-13 | `5d17f1e` | fix: base URL '/' 변경 (커스텀 도메인 대응) |
+| 2026-03-13 | `da84b7a` | update: BrandingWeek9-10, ToolAI, ToolDesign 콘텐츠 보강 |
+| 2026-03-13 | `725d1cb` | fix: CNAME 도메인 수정 (self-branding.dreamitbiz.com) |
+
+---
+
+## Supabase 데이터베이스 구조
+
+### 테이블 목록
+
+| # | 테이블명 | 용도 | 주요 컬럼 |
+|---|----------|------|-----------|
+| 1 | `user_profiles` | 사용자 프로필 | id(UUID), email, full_name, avatar_url, signup_domain, is_blocked, last_login |
+| 2 | `posts` | 자유게시판 | id, title, content, category, author_id, author_name, views |
+| 3 | `comments` | 게시판 댓글 | id, post_id(FK), content, author_id, author_name |
+| 4 | `lectures` | 참고자료/강의안 | id, title, content, week_number, file_url, is_published, views |
+| 5 | `gallery` | 갤러리 | id, title, content, category, image_url, thumbnail_url, views |
+| 6 | `gallery_comments` | 갤러리 댓글 | id, gallery_id(FK), content, author_id |
+| 7 | `portfolio` | 포트폴리오 | id, title, summary, content, cover_image, tags[], project_url, views |
+| 8 | `portfolio_comments` | 포트폴리오 댓글 | id, portfolio_id(FK), content, author_id |
+| 9 | `websites` | 추천 웹사이트 | id, title, content, category, url, image_url, views |
+| 10 | `websites_comments` | 웹사이트 댓글 | id, website_id(FK), content, author_id |
+
+### RPC 함수
+
+| 함수명 | 파라미터 | 용도 |
+|--------|----------|------|
+| `increment_views` | post_id (BIGINT) | 게시판 조회수 +1 |
+| `increment_lecture_views` | lecture_id (BIGINT) | 강의안 조회수 +1 |
+| `increment_gallery_views` | item_id (BIGINT) | 갤러리 조회수 +1 |
+| `increment_portfolio_views` | item_id (BIGINT) | 포트폴리오 조회수 +1 |
+| `increment_website_views` | item_id (BIGINT) | 웹사이트 조회수 +1 |
+| `update_last_login` | target_user_id (UUID) | 최근 접속 시간 갱신 |
+| `handle_new_user` | (트리거) | 신규 가입 시 user_profiles 자동 생성 |
+
+### 인증 설정 (Supabase Auth)
+
+| 항목 | 설정 |
+|------|------|
+| **이메일 로그인** | 활성화 (이메일/비밀번호) |
+| **Google OAuth** | Providers > Google 활성화 필요 |
+| **Kakao OAuth** | Providers > Kakao 활성화 필요 |
+| **Auth Flow** | PKCE |
+| **Redirect URL** | `https://self-branding.dreamitbiz.com` |
+
+### 환경 변수 (.env)
+
+```
+VITE_SUPABASE_URL=https://xxxxxxxxxx.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIs...
+```
+
+### SQL 셋업 파일
+
+`supabase-setup.sql` — 모든 테이블, RPC 함수, RLS 정책이 포함된 SQL 파일.
+Supabase Dashboard > SQL Editor에서 실행하여 DB를 초기화할 수 있습니다.
