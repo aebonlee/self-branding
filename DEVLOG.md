@@ -202,7 +202,7 @@
 D:\self-branding/
 ├── public/           # 정적 파일 (favicon, CNAME)
 ├── src/
-│   ├── components/   # 공통 컴포넌트 (6개)
+│   ├── components/   # 공통 컴포넌트 (7개)
 │   ├── config/       # 사이트 설정 (2개)
 │   ├── contexts/     # React Context (4개)
 │   ├── hooks/        # 커스텀 훅 (3개)
@@ -260,6 +260,8 @@ D:\self-branding/
 | 2026-03-13 | `725d1cb` | fix: CNAME 도메인 수정 (self-branding.dreamitbiz.com) |
 | 2026-03-13 | `9c051ac` | docs: 개발일지 업데이트 및 Supabase SQL 설정 파일 추가 |
 | 2026-03-13 | `ebe5f7a` | feat: Open Graph 메타 태그 추가 및 BASE URL 수정 |
+| 2026-03-13 | `9d1f0e1` | docs: README.md 작성, Supabase 설정 점검 및 수정 |
+| 2026-03-13 | — | fix: ErrorBoundary 추가, 빈페이지 문제 분석 및 재배포 |
 
 ---
 
@@ -279,6 +281,37 @@ D:\self-branding/
 ### 수정 내역
 1. **`check_user_status` RPC 함수 추가** — AuthContext에서 호출하나 SQL에 미정의 → 추가
 2. **댓글 테이블 UPDATE 정책 4건 추가** — comments, gallery_comments, portfolio_comments, websites_comments
+
+---
+
+## 빈페이지 문제 분석 및 해결 (2026-03-13)
+
+### 증상
+- 12주차 커리큘럼 중 4-12주차 페이지가 배포 사이트에서 빈페이지로 표시
+- 마케팅 도구 중 디자인 도구 페이지가 빈페이지로 표시
+- 1-3주차 및 나머지 도구 페이지는 정상
+
+### 분석 결과
+
+| 점검 항목 | 결과 |
+|-----------|------|
+| 소스코드 (20개 파일) | ✅ 모든 파일 268~695줄 정상 콘텐츠 |
+| JSX 구조 | ✅ 태그 균형, 프래그먼트 닫힘, export 정상 |
+| 빌드 출력 (54개 청크) | ✅ 모든 청크 13-42KB 정상 크기 |
+| 라우팅 (PublicLayout) | ✅ 모든 경로 정상 매핑 |
+| CSS 클래스 | ✅ 작동/미작동 페이지 동일 패턴 |
+| 인코딩/특수문자 | ✅ BOM/NULL/NBSP/ZWS 없음 |
+| 컴파일된 JS 비교 | ✅ 구조 동일 (jsxs/jsx/export) |
+| GitHub Pages 배포 | ✅ 모든 54개 에셋 HTTP 200 확인 |
+
+### 원인 추정
+- GitHub Pages CDN 전파 지연: HTML이 먼저 갱신되고 JS 청크가 아직 전파되지 않은 상태에서 접속 시 빈페이지 발생 가능
+- 브라우저 캐시: 이전 배포의 index.html이 캐시되어 존재하지 않는 청크 해시 참조
+
+### 해결 조치
+1. **ErrorBoundary 컴포넌트 추가** — 런타임 에러 발생 시 "페이지 로딩 오류" 메시지와 새로고침 버튼 표시 (빈페이지 대신)
+2. **클린 빌드 후 재배포** — `rm -rf dist && npm run build && npx gh-pages -d dist`
+3. **CDN 전파 완료 확인** — 54/54 에셋 HTTP 200 확인 후 서비스 검증
 
 ---
 

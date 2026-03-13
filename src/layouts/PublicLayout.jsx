@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import AuthGuard from '../components/AuthGuard';
+import ErrorBoundary from '../components/ErrorBoundary';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import useCodeCopy from '../hooks/useCodeCopy';
@@ -83,6 +84,7 @@ const PublicLayout = () => {
     <div className="site-wrapper">
       <Navbar />
       <main className="site-main">
+        <ErrorBoundary>
         <Suspense fallback={<Loading />}>
           <Routes>
             {/* Home */}
@@ -166,6 +168,7 @@ const PublicLayout = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
+        </ErrorBoundary>
       </main>
       <Footer />
     </div>
