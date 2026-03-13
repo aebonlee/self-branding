@@ -15,26 +15,31 @@ const BrandingLesson = () => {
     { week: 5, title: '디지털 마케팅 기초', desc: 'SEO, SEM, 퍼널 마케팅, 랜딩 페이지 최적화, ROI 계산', path: '/lessons/digital-marketing' },
     { week: 6, title: 'SNS 마케팅 전략', desc: 'Instagram, YouTube, TikTok, LinkedIn 마케팅 및 콘텐츠 캘린더', path: '/lessons/sns-marketing' },
     { week: 7, title: '콘텐츠 마케팅', desc: '블로그, 뉴스레터, 스토리텔링, 콘텐츠 전략 및 제작', path: '/lessons/content-marketing' },
-    { week: 8, title: '기업 홍보 & PR', desc: '보도자료 작성, 미디어 관계, 위기관리 커뮤니케이션', path: '/lessons/corporate-pr' },
-    { week: 9, title: '개인 브랜딩 실전', desc: '온라인 프레즌스 구축, 네트워킹, 퍼스널 브랜드 관리', path: '/lessons/personal-branding' },
-    { week: 10, title: '포트폴리오 브랜딩', desc: '이력서, 포트폴리오 웹사이트, 프레젠테이션 제작', path: '/lessons/portfolio-branding' },
-    { week: 11, title: '마케팅 분석 & KPI', desc: 'GA4, ROI 분석, A/B 테스트, 데이터 기반 의사결정', path: '/lessons/marketing-analytics' },
-    { week: 12, title: '종합 프로젝트', desc: '브랜딩 프로젝트 기획부터 발표까지 전 과정 실습', path: '/lessons/final-project' },
+    { week: 8, title: '중간고사', desc: '1~7주차 학습 내용 종합 점검 및 브랜딩 기초 역량 평가', path: '/lessons/midterm' },
+    { week: 9, title: '기업 홍보 & PR', desc: '보도자료 작성, 미디어 관계, 위기관리 커뮤니케이션', path: '/lessons/corporate-pr' },
+    { week: 10, title: '개인 브랜딩 실전', desc: '온라인 프레즌스 구축, 네트워킹, 퍼스널 브랜드 관리', path: '/lessons/personal-branding' },
+    { week: 11, title: '포트폴리오 브랜딩', desc: '이력서, 포트폴리오 웹사이트, 프레젠테이션 제작', path: '/lessons/portfolio-branding' },
+    { week: 12, title: '마케팅 분석 & KPI', desc: 'GA4, ROI 분석, A/B 테스트, 데이터 기반 의사결정', path: '/lessons/marketing-analytics' },
+    { week: 13, title: '종합 프로젝트', desc: '브랜딩 프로젝트 기획부터 실행까지 전 과정 실습', path: '/lessons/final-project' },
+    { week: 14, title: '프로젝트 발표 & 피드백', desc: '최종 프로젝트 발표, 동료 피드백, 개선 계획 수립', path: '/lessons/presentation' },
+    { week: 15, title: '기말고사', desc: '9~14주차 심화 과정 종합 평가 및 학기 마무리', path: '/lessons/final-exam' },
   ];
 
   const getPhaseLabel = (week) => {
     if (week <= 4) return { label: '기초', color: '#3b82f6' };
     if (week <= 7) return { label: '실전', color: '#10b981' };
-    return { label: '심화', color: '#f59e0b' };
+    if (week === 8) return { label: '중간고사', color: '#ef4444' };
+    if (week <= 13) return { label: '심화', color: '#f59e0b' };
+    return { label: '발표·기말', color: '#8b5cf6' };
   };
 
   return (
     <>
-      <SEOHead title="셀프 브랜딩 12주 커리큘럼" path="/lessons" />
+      <SEOHead title="셀프 브랜딩 15주 커리큘럼" path="/lessons" />
       <section className="page-header">
         <div className="container">
-          <h1>셀프 브랜딩 12주 커리큘럼</h1>
-          <p>브랜딩의 기초부터 실전 프로젝트까지, 체계적으로 배우는 12주 학습 여정</p>
+          <h1>셀프 브랜딩 15주 커리큘럼</h1>
+          <p>브랜딩의 기초부터 실전 프로젝트까지, 체계적으로 배우는 15주 학습 여정</p>
         </div>
       </section>
       <section className="lesson-content section" data-aos="fade-up">
@@ -42,7 +47,7 @@ const BrandingLesson = () => {
           <div className="lesson-body">
             <h2>커리큘럼 소개</h2>
             <p>
-              본 커리큘럼은 셀프 브랜딩과 마케팅의 핵심 역량을 12주에 걸쳐 단계적으로 학습할 수 있도록 설계되었습니다.
+              본 커리큘럼은 셀프 브랜딩과 마케팅의 핵심 역량을 15주에 걸쳐 단계적으로 학습할 수 있도록 설계되었습니다.
               각 주차별 이론 학습과 실습 과제를 통해 실무에 바로 적용 가능한 브랜딩 전략을 수립할 수 있습니다.
             </p>
 
@@ -51,7 +56,9 @@ const BrandingLesson = () => {
               <ul>
                 <li><strong style={{ color: '#3b82f6' }}>Phase 1 — 기초 (1~4주)</strong>: 브랜딩 개념 이해, 자기분석, 타겟 설정, 아이덴티티 구축</li>
                 <li><strong style={{ color: '#10b981' }}>Phase 2 — 실전 (5~7주)</strong>: 디지털 마케팅, SNS 전략, 콘텐츠 마케팅</li>
-                <li><strong style={{ color: '#f59e0b' }}>Phase 3 — 심화 (8~12주)</strong>: PR, 개인 브랜딩, 포트폴리오, 분석, 종합 프로젝트</li>
+                <li><strong style={{ color: '#ef4444' }}>Phase 3 — 중간고사 (8주)</strong>: 1~7주차 학습 내용 종합 평가</li>
+                <li><strong style={{ color: '#f59e0b' }}>Phase 4 — 심화 (9~13주)</strong>: PR, 개인 브랜딩, 포트폴리오, 분석, 종합 프로젝트</li>
+                <li><strong style={{ color: '#8b5cf6' }}>Phase 5 — 발표·기말 (14~15주)</strong>: 프로젝트 발표, 피드백, 기말고사</li>
               </ul>
             </div>
 

@@ -15,11 +15,14 @@ const Home = () => {
     { week: 5, icon: '📱', path: '/lessons/digital-marketing', titleKey: 'site.nav.week5', desc: 'SEO, SEM, 퍼널 마케팅' },
     { week: 6, icon: '📸', path: '/lessons/sns-marketing', titleKey: 'site.nav.week6', desc: 'Instagram, YouTube, TikTok' },
     { week: 7, icon: '✍️', path: '/lessons/content-marketing', titleKey: 'site.nav.week7', desc: '블로그, 뉴스레터, 스토리텔링' },
-    { week: 8, icon: '📢', path: '/lessons/corporate-pr', titleKey: 'site.nav.week8', desc: '보도자료, 미디어 관계, CSR' },
-    { week: 9, icon: '💼', path: '/lessons/personal-branding', titleKey: 'site.nav.week9', desc: '온라인 프레즌스, 네트워킹' },
-    { week: 10, icon: '📂', path: '/lessons/portfolio-branding', titleKey: 'site.nav.week10', desc: '포트폴리오, 이력서, 웹사이트' },
-    { week: 11, icon: '📊', path: '/lessons/marketing-analytics', titleKey: 'site.nav.week11', desc: 'GA4, ROI, A/B 테스트' },
-    { week: 12, icon: '🚀', path: '/lessons/final-project', titleKey: 'site.nav.week12', desc: '종합 프로젝트 기획~발표' },
+    { week: 8, icon: '📝', path: '/lessons/midterm', titleKey: 'site.nav.week8', desc: '1~7주차 종합 평가' },
+    { week: 9, icon: '📢', path: '/lessons/corporate-pr', titleKey: 'site.nav.week9', desc: '보도자료, 미디어 관계, CSR' },
+    { week: 10, icon: '💼', path: '/lessons/personal-branding', titleKey: 'site.nav.week10', desc: '온라인 프레즌스, 네트워킹' },
+    { week: 11, icon: '📂', path: '/lessons/portfolio-branding', titleKey: 'site.nav.week11', desc: '포트폴리오, 이력서, 웹사이트' },
+    { week: 12, icon: '📊', path: '/lessons/marketing-analytics', titleKey: 'site.nav.week12', desc: 'GA4, ROI, A/B 테스트' },
+    { week: 13, icon: '🚀', path: '/lessons/final-project', titleKey: 'site.nav.week13', desc: '종합 프로젝트 기획~실행' },
+    { week: 14, icon: '🎤', path: '/lessons/presentation', titleKey: 'site.nav.week14', desc: '프로젝트 발표, 동료 피드백' },
+    { week: 15, icon: '🏆', path: '/lessons/final-exam', titleKey: 'site.nav.week15', desc: '9~14주차 종합 평가' },
   ];
 
   const toolCards = [
@@ -44,7 +47,7 @@ const Home = () => {
               <span className="hero-title-line2">나만의 마케팅 전략</span>
             </h1>
             <p className="hero-description" data-aos="fade-up" data-aos-delay="100">
-              기업 홍보(PR)부터 개인 브랜딩, 디지털 마케팅까지 — 12주 커리큘럼으로 체계적으로 배우는 셀프 브랜딩 종합 학습 플랫폼
+              기업 홍보(PR)부터 개인 브랜딩, 디지털 마케팅까지 — 15주 커리큘럼으로 체계적으로 배우는 셀프 브랜딩 종합 학습 플랫폼
             </p>
             <div className="hero-actions" data-aos="fade-up" data-aos-delay="200">
               <Link to="/lessons" className="hero-btn primary">커리큘럼 시작하기</Link>
@@ -86,7 +89,7 @@ const Home = () => {
       <section className="section">
         <div className="container">
           <div className="section-header" data-aos="fade-up">
-            <h2 className="section-title">12주 커리큘럼</h2>
+            <h2 className="section-title">15주 커리큘럼</h2>
             <p className="section-subtitle">단계별로 체계적으로 배우는 셀프 브랜딩 & 마케팅</p>
           </div>
           <div className="curriculum-grid">

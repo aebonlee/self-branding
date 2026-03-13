@@ -16,7 +16,7 @@ const LearningRoadmap = lazy(() => import('../pages/LearningRoadmap'));
 const Syllabus = lazy(() => import('../pages/Syllabus'));
 const PracticeGuide = lazy(() => import('../pages/PracticeGuide'));
 
-// 12주차 커리큘럼
+// 15주차 커리큘럼
 const BrandingLesson = lazy(() => import('../pages/BrandingLesson'));
 const BrandingWeek1 = lazy(() => import('../pages/BrandingWeek1'));
 const BrandingWeek2 = lazy(() => import('../pages/BrandingWeek2'));
@@ -30,6 +30,9 @@ const BrandingWeek9 = lazy(() => import('../pages/BrandingWeek9'));
 const BrandingWeek10 = lazy(() => import('../pages/BrandingWeek10'));
 const BrandingWeek11 = lazy(() => import('../pages/BrandingWeek11'));
 const BrandingWeek12 = lazy(() => import('../pages/BrandingWeek12'));
+const BrandingWeek13 = lazy(() => import('../pages/BrandingWeek13'));
+const BrandingWeek14 = lazy(() => import('../pages/BrandingWeek14'));
+const BrandingWeek15 = lazy(() => import('../pages/BrandingWeek15'));
 
 // 마케팅 도구 가이드
 const MarketingToolsHome = lazy(() => import('../pages/MarketingToolsHome'));
@@ -102,7 +105,7 @@ const PublicLayout = () => {
             <Route path="/branding/syllabus" element={<Syllabus />} />
             <Route path="/branding/practice-guide" element={<PracticeGuide />} />
 
-            {/* 12주차 커리큘럼 */}
+            {/* 15주차 커리큘럼 */}
             <Route path="/lessons" element={<BrandingLesson />} />
             <Route path="/lessons/intro" element={<BrandingWeek1 />} />
             <Route path="/lessons/self-analysis" element={<BrandingWeek2 />} />
@@ -111,11 +114,14 @@ const PublicLayout = () => {
             <Route path="/lessons/digital-marketing" element={<BrandingWeek5 />} />
             <Route path="/lessons/sns-marketing" element={<BrandingWeek6 />} />
             <Route path="/lessons/content-marketing" element={<BrandingWeek7 />} />
-            <Route path="/lessons/corporate-pr" element={<BrandingWeek8 />} />
-            <Route path="/lessons/personal-branding" element={<BrandingWeek9 />} />
-            <Route path="/lessons/portfolio-branding" element={<BrandingWeek10 />} />
-            <Route path="/lessons/marketing-analytics" element={<BrandingWeek11 />} />
-            <Route path="/lessons/final-project" element={<BrandingWeek12 />} />
+            <Route path="/lessons/midterm" element={<BrandingWeek8 />} />
+            <Route path="/lessons/corporate-pr" element={<BrandingWeek9 />} />
+            <Route path="/lessons/personal-branding" element={<BrandingWeek10 />} />
+            <Route path="/lessons/portfolio-branding" element={<BrandingWeek11 />} />
+            <Route path="/lessons/marketing-analytics" element={<BrandingWeek12 />} />
+            <Route path="/lessons/final-project" element={<BrandingWeek13 />} />
+            <Route path="/lessons/presentation" element={<BrandingWeek14 />} />
+            <Route path="/lessons/final-exam" element={<BrandingWeek15 />} />
 
             {/* 마케팅 도구 */}
             <Route path="/tools" element={<MarketingToolsHome />} />

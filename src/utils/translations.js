@@ -94,7 +94,7 @@ export const translations = {
         roadmap: '학습 로드맵',
         syllabus: '강의계획서',
         practiceGuide: '실습안내',
-        lessons: '12주 커리큘럼',
+        lessons: '15주 커리큘럼',
         week1: '1주차: 셀프 브랜딩 개론',
         week2: '2주차: 자기분석 & 핵심가치',
         week3: '3주차: 타겟 오디언스 분석',
@@ -102,11 +102,14 @@ export const translations = {
         week5: '5주차: 디지털 마케팅 기초',
         week6: '6주차: SNS 마케팅 전략',
         week7: '7주차: 콘텐츠 마케팅',
-        week8: '8주차: 기업 홍보 & PR',
-        week9: '9주차: 개인 브랜딩 실전',
-        week10: '10주차: 포트폴리오 브랜딩',
-        week11: '11주차: 마케팅 분석 & KPI',
-        week12: '12주차: 종합 프로젝트',
+        week8: '8주차: 중간고사',
+        week9: '9주차: 기업 홍보 & PR',
+        week10: '10주차: 개인 브랜딩 실전',
+        week11: '11주차: 포트폴리오 브랜딩',
+        week12: '12주차: 마케팅 분석 & KPI',
+        week13: '13주차: 종합 프로젝트',
+        week14: '14주차: 프로젝트 발표 & 피드백',
+        week15: '15주차: 기말고사',
         tools: '마케팅 도구',
         toolInstagram: '인스타그램',
         toolYouTube: '유튜브',
@@ -127,7 +130,7 @@ export const translations = {
       branding: {
         roadmap: {
           title: '학습 로드맵',
-          subtitle: '12주 셀프 브랜딩 학습 경로',
+          subtitle: '15주 셀프 브랜딩 학습 경로',
         },
         syllabus: {
           title: '강의계획서',
@@ -135,14 +138,14 @@ export const translations = {
         },
         practiceGuide: {
           title: '실습안내',
-          subtitle: '12주 실습 내역 및 과제 안내',
+          subtitle: '15주 실습 내역 및 과제 안내',
         },
       },
       home: {
         title: '셀프 브랜딩 마케팅',
         subtitle: '셀프 브랜딩으로 시작하는 나만의 마케팅 전략',
         heroDesc:
-          '기업홍보부터 개인브랜딩까지, 디지털 마케팅의 모든 것을 배워보세요. 12주 커리큘럼으로 체계적인 브랜딩 역량을 키울 수 있습니다.',
+          '기업홍보부터 개인브랜딩까지, 디지털 마케팅의 모든 것을 배워보세요. 15주 커리큘럼으로 체계적인 브랜딩 역량을 키울 수 있습니다.',
         startLearning: '학습 시작하기',
         goToBoard: '게시판 바로가기',
         whatIsBranding: '셀프 브랜딩이란?',
@@ -153,7 +156,7 @@ export const translations = {
         goal2: '디지털 마케팅 채널 활용 능력',
         goal3: '포트폴리오와 개인 브랜드 구축',
         goal4: '마케팅 분석과 성과 측정',
-        curriculum: '12주 커리큘럼',
+        curriculum: '15주 커리큘럼',
         curriculumDesc:
           '체계적인 단계별 학습 과정을 통해 브랜딩 역량을 키워보세요.',
         tools: '마케팅 도구 가이드',
@@ -161,7 +164,7 @@ export const translations = {
           '실무에서 바로 활용할 수 있는 마케팅 도구를 배워보세요.',
       },
       lessons: {
-        title: '12주 커리큘럼',
+        title: '15주 커리큘럼',
         subtitle: '셀프 브랜딩의 기초부터 실전까지 단계별 학습',
       },
       tools: {
@@ -473,7 +476,7 @@ export const translations = {
         roadmap: 'Learning Roadmap',
         syllabus: 'Syllabus',
         practiceGuide: 'Practice Guide',
-        lessons: '12-Week Curriculum',
+        lessons: '15-Week Curriculum',
         week1: 'W1: Introduction to Self-Branding',
         week2: 'W2: Self-Analysis & Core Values',
         week3: 'W3: Target Audience Analysis',
@@ -481,11 +484,14 @@ export const translations = {
         week5: 'W5: Digital Marketing Basics',
         week6: 'W6: SNS Marketing Strategy',
         week7: 'W7: Content Marketing',
-        week8: 'W8: Corporate PR',
-        week9: 'W9: Personal Branding Practice',
-        week10: 'W10: Portfolio Branding',
-        week11: 'W11: Marketing Analytics & KPI',
-        week12: 'W12: Final Project',
+        week8: 'W8: Midterm Exam',
+        week9: 'W9: Corporate PR',
+        week10: 'W10: Personal Branding Practice',
+        week11: 'W11: Portfolio Branding',
+        week12: 'W12: Marketing Analytics & KPI',
+        week13: 'W13: Final Project',
+        week14: 'W14: Project Presentation & Feedback',
+        week15: 'W15: Final Exam',
         tools: 'Marketing Tools',
         toolInstagram: 'Instagram',
         toolYouTube: 'YouTube',
@@ -506,7 +512,7 @@ export const translations = {
       branding: {
         roadmap: {
           title: 'Learning Roadmap',
-          subtitle: '12-Week Self-Branding Learning Path',
+          subtitle: '15-Week Self-Branding Learning Path',
         },
         syllabus: {
           title: 'Syllabus',
@@ -514,14 +520,14 @@ export const translations = {
         },
         practiceGuide: {
           title: 'Practice Guide',
-          subtitle: '12-week practice details and assignments',
+          subtitle: '15-week practice details and assignments',
         },
       },
       home: {
         title: 'Self-Branding Marketing',
         subtitle: 'Build Your Own Marketing Strategy with Self-Branding',
         heroDesc:
-          'From corporate PR to personal branding, learn everything about digital marketing. Build systematic branding skills through our 12-week curriculum.',
+          'From corporate PR to personal branding, learn everything about digital marketing. Build systematic branding skills through our 15-week curriculum.',
         startLearning: 'Start Learning',
         goToBoard: 'Go to Board',
         whatIsBranding: 'What is Self-Branding?',
@@ -532,7 +538,7 @@ export const translations = {
         goal2: 'Master digital marketing channels',
         goal3: 'Build portfolio and personal brand',
         goal4: 'Marketing analytics and performance measurement',
-        curriculum: '12-Week Curriculum',
+        curriculum: '15-Week Curriculum',
         curriculumDesc:
           'Build your branding skills through our systematic step-by-step learning process.',
         tools: 'Marketing Tools Guide',
@@ -540,7 +546,7 @@ export const translations = {
           'Learn marketing tools you can use right away in practice.',
       },
       lessons: {
-        title: '12-Week Curriculum',
+        title: '15-Week Curriculum',
         subtitle:
           'Step-by-step learning from branding basics to real practice',
       },

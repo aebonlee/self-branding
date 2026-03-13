@@ -13,14 +13,14 @@ const LearningRoadmap = () => {
       <section className="page-header">
         <div className="container">
           <h1>학습 로드맵</h1>
-          <p>12주간의 체계적인 셀프 브랜딩 학습 여정</p>
+          <p>15주간의 체계적인 셀프 브랜딩 학습 여정</p>
         </div>
       </section>
       <section className="lesson-content section">
         <div className="container">
           <div className="lesson-body">
-            <h2>12주 학습 로드맵</h2>
-            <p>본 과정은 브랜딩의 기초부터 실전 프로젝트까지 단계적으로 구성되어 있습니다.</p>
+            <h2>15주 학습 로드맵</h2>
+            <p>본 과정은 브랜딩의 기초부터 실전 프로젝트, 중간·기말 평가까지 한 학기 형식으로 구성되어 있습니다.</p>
 
             <div className="callout-box">
               <h3>Phase 1: 기초 다지기 (1~4주)</h3>
@@ -42,13 +42,28 @@ const LearningRoadmap = () => {
             </div>
 
             <div className="callout-box">
-              <h3>Phase 3: 실전 & 분석 (8~12주)</h3>
+              <h3>Phase 3: 중간고사 (8주)</h3>
               <ul>
-                <li><strong>8주차</strong> — 기업 홍보 & PR: 보도자료, 미디어 관계, 위기관리</li>
-                <li><strong>9주차</strong> — 개인 브랜딩 실전: 온라인 프레즌스 구축</li>
-                <li><strong>10주차</strong> — 포트폴리오 브랜딩: 이력서, 웹사이트 제작</li>
-                <li><strong>11주차</strong> — 마케팅 분석 & KPI: GA4, ROI, A/B 테스트</li>
-                <li><strong>12주차</strong> — 종합 프로젝트: 브랜딩 프로젝트 기획~발표</li>
+                <li><strong>8주차</strong> — 중간고사: 1~7주차 학습 내용 종합 점검 및 평가</li>
+              </ul>
+            </div>
+
+            <div className="callout-box">
+              <h3>Phase 4: 심화 학습 (9~13주)</h3>
+              <ul>
+                <li><strong>9주차</strong> — 기업 홍보 & PR: 보도자료, 미디어 관계, 위기관리</li>
+                <li><strong>10주차</strong> — 개인 브랜딩 실전: 온라인 프레즌스 구축</li>
+                <li><strong>11주차</strong> — 포트폴리오 브랜딩: 이력서, 웹사이트 제작</li>
+                <li><strong>12주차</strong> — 마케팅 분석 & KPI: GA4, ROI, A/B 테스트</li>
+                <li><strong>13주차</strong> — 종합 프로젝트: 브랜딩 프로젝트 기획~실행</li>
+              </ul>
+            </div>
+
+            <div className="callout-box">
+              <h3>Phase 5: 발표 & 기말 (14~15주)</h3>
+              <ul>
+                <li><strong>14주차</strong> — 프로젝트 발표 & 피드백: 최종 발표, 동료 평가</li>
+                <li><strong>15주차</strong> — 기말고사: 9~14주차 심화 과정 종합 평가</li>
               </ul>
             </div>
 
@@ -57,7 +72,8 @@ const LearningRoadmap = () => {
               <li>각 주차별 이론 학습 + 실습 과제</li>
               <li>실제 사례 분석 및 토론</li>
               <li>포트폴리오 누적 제작</li>
-              <li>최종 프로젝트 발표</li>
+              <li>중간고사 (8주차) + 기말고사 (15주차)</li>
+              <li>최종 프로젝트 발표 (14주차)</li>
             </ul>
 
             <div className="lesson-nav">

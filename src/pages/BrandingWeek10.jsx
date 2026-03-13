@@ -9,648 +9,411 @@ const BrandingWeek10 = () => {
 
   return (
     <>
-      <SEOHead title="10주차: 포트폴리오 브랜딩" path="/lessons/portfolio-branding" />
+      <SEOHead title="10주차: 개인 브랜딩 실전" path="/lessons/personal-branding" />
       <section className="page-header">
         <div className="container">
-          <h1>10주차: 포트폴리오 브랜딩</h1>
-          <p>나의 역량과 경험을 증명하는 최고의 도구 — 포트폴리오, 이력서, 개인 웹사이트로 차별화된 브랜드를 완성합니다</p>
+          <h1>10주차: 개인 브랜딩 실전</h1>
+          <p>온라인 프레즌스 구축부터 네트워킹, 엘리베이터 피치까지 — 나만의 브랜드를 세상에 알리는 실전 전략</p>
         </div>
       </section>
       <section className="lesson-content section" data-aos="fade-up">
         <div className="container">
           <div className="lesson-body">
 
-            <h2>1. 포트폴리오 유형</h2>
+            <h2>1. 온라인 프레즌스 구축</h2>
             <p>
-              포트폴리오는 당신의 역량과 경험을 시각적으로 증명하는 가장 강력한 도구입니다.
-              이력서가 무엇을 했는가를 알려준다면, 포트폴리오는 어떻게 했고, 얼마나 잘 했는가를 보여줍니다.
-              채용담당자의 평균 이력서 검토 시간이 7.4초라는 점을 고려하면,
-              시각적으로 임팩트 있는 포트폴리오가 첫인상을 결정짓습니다.
-              포트폴리오의 형태는 온라인/오프라인, 그리고 분야에 따라 크게 달라집니다.
+              디지털 시대에 검색되지 않으면 존재하지 않는 것이라는 말이 있습니다.
+              당신의 이름을 구글이나 네이버에 검색했을 때 어떤 결과가 나오나요?
+              온라인 프레즌스(Online Presence)는 인터넷 상에서 당신의 존재감을 의미하며,
+              퍼스널 브랜딩의 가장 기본적인 인프라입니다. 채용 담당자의 92%가
+              후보자를 온라인에서 검색한다는 조사 결과가 이를 뒷받침합니다.
+              또한 클라이언트의 78%는 비즈니스 미팅 전에 상대방을 온라인으로 조사합니다.
             </p>
 
-            <h3>온라인 vs 오프라인 포트폴리오</h3>
-            <table className="lesson-table">
-              <thead>
-                <tr><th>구분</th><th>온라인 포트폴리오</th><th>오프라인 포트폴리오</th></tr>
-              </thead>
-              <tbody>
-                <tr><td><strong>형태</strong></td><td>웹사이트, PDF, 디지털 플랫폼</td><td>인쇄물, 바인더, USB, 프레젠테이션</td></tr>
-                <tr><td><strong>접근성</strong></td><td>URL 공유로 언제 어디서나 접근 가능</td><td>대면 미팅, 면접 시 직접 전달</td></tr>
-                <tr><td><strong>업데이트</strong></td><td>실시간 수정 및 업데이트 가능</td><td>재인쇄/재제작 필요</td></tr>
-                <tr><td><strong>인터랙션</strong></td><td>클릭, 스크롤, 애니메이션, 라이브 데모</td><td>질감, 소재, 실물 크기 체험</td></tr>
-                <tr><td><strong>비용</strong></td><td>무료~저비용 (도메인+호스팅)</td><td>인쇄비, 제작비 발생</td></tr>
-                <tr><td><strong>추적</strong></td><td>Google Analytics로 방문자 분석 가능</td><td>추적 불가</td></tr>
-                <tr><td><strong>적합 분야</strong></td><td>개발, UX/UI, 마케팅, 콘텐츠</td><td>그래픽 디자인, 건축, 패션, 제품 디자인</td></tr>
-              </tbody>
-            </table>
-
-            <h3>분야별 포트폴리오 구성</h3>
-            <table className="lesson-table">
-              <thead>
-                <tr><th>분야</th><th>핵심 구성</th><th>강조 포인트</th><th>주요 플랫폼</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>UI/UX 디자인</strong></td>
-                  <td>와이어프레임, 프로토타입, 유저 플로우, 비포/애프터</td>
-                  <td>문제 해결 과정, 유저 리서치, 반복 개선</td>
-                  <td>Behance, Dribbble, 개인 웹사이트</td>
-                </tr>
-                <tr>
-                  <td><strong>그래픽 디자인</strong></td>
-                  <td>로고, 브랜드 아이덴티티, 편집 디자인, 일러스트</td>
-                  <td>시각적 완성도, 컨셉 기획력, 클라이언트 요구 반영</td>
-                  <td>Behance, Adobe Portfolio, 개인 웹사이트</td>
-                </tr>
-                <tr>
-                  <td><strong>소프트웨어 개발</strong></td>
-                  <td>프로젝트 코드, 라이브 데모, 기술 스택, 아키텍처</td>
-                  <td>코드 품질, 문제 해결력, 기술적 도전, 문서화</td>
-                  <td>GitHub, 개인 블로그, 개인 웹사이트</td>
-                </tr>
-                <tr>
-                  <td><strong>마케팅/기획</strong></td>
-                  <td>캠페인 결과, 성과 데이터, 전략 문서, 케이스 스터디</td>
-                  <td>ROI, 성장률, 데이터 기반 의사결정 과정</td>
-                  <td>개인 웹사이트, LinkedIn, Notion</td>
-                </tr>
-                <tr>
-                  <td><strong>영상/콘텐츠</strong></td>
-                  <td>하이라이트 릴, 풀 작업물, 조회수 데이터</td>
-                  <td>크리에이티브, 스토리텔링, 기술적 퀄리티</td>
-                  <td>YouTube, Vimeo, 개인 웹사이트</td>
-                </tr>
-                <tr>
-                  <td><strong>글쓰기/에디터</strong></td>
-                  <td>발행 기사, 기고문, 편집물, 조회수/공유수</td>
-                  <td>글쓰기 스타일, 다양한 장르, 독자 반응</td>
-                  <td>브런치, Medium, 개인 블로그</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <div className="info-box tip">
-              <h3>포트폴리오가 필요한 순간</h3>
-              <p>
-                포트폴리오는 디자이너나 개발자만의 것이 아닙니다. 마케터, 기획자, 영업, PM, 교육자 등
-                모든 직무에서 자신의 성과를 시각화하여 보여줄 수 있습니다.
-                나는 포트폴리오가 필요 없는 직군이다라고 생각한다면, 경쟁자가 포트폴리오를 가지고 있을 때
-                불리해질 수 있다는 점을 기억하세요. 형태와 내용은 다르지만, 원칙은 동일합니다.
-              </p>
-            </div>
-
-            <h2 data-aos="fade-up">2. 포트폴리오 구성 원칙</h2>
-            <p>
-              좋은 포트폴리오는 명확한 구조와 스토리라인을 가지고 있습니다.
-              보는 사람이 3분 안에 당신의 역량을 파악할 수 있도록 구성해야 합니다.
-              핵심 원칙은 선별, 스토리텔링, 시각 디자인 세 가지입니다.
-            </p>
-
-            <h3>원칙 1: 선별 (Curation)</h3>
+            <h3>도메인 &amp; 웹사이트</h3>
             <div className="callout-box">
-              <h3>양보다 질: 최고의 작업물만 선별하세요</h3>
+              <h3>나만의 도메인을 확보하세요</h3>
               <ul>
-                <li><strong>3~5개가 적정</strong>: 10개의 평범한 프로젝트보다 3개의 뛰어난 프로젝트가 효과적</li>
-                <li><strong>최신성</strong>: 최근 2년 이내의 작업물을 우선 배치</li>
-                <li><strong>다양성</strong>: 서로 다른 유형/스킬을 보여주는 프로젝트로 구성</li>
-                <li><strong>타겟 맞춤</strong>: 지원하는 회사/직무에 맞는 프로젝트를 전략적으로 선택</li>
-                <li><strong>정기 정리</strong>: 분기마다 포트폴리오를 리뷰하고, 약한 프로젝트는 교체</li>
+                <li><strong>도메인 선택</strong>: 가급적 본명(예: honggildong.com) 또는 브랜드명으로 .com 도메인 확보</li>
+                <li><strong>.com 우선</strong>: .com이 없으면 .co, .me, .kr 순으로 고려</li>
+                <li><strong>일관성</strong>: 도메인, SNS 핸들, 이메일 주소를 모두 동일한 이름으로 통일</li>
+                <li><strong>이메일</strong>: name@yourdomain.com 형태의 커스텀 이메일은 전문성을 높여줍니다</li>
+                <li><strong>핸들 선점</strong>: namechk.com에서 모든 플랫폼의 동일 핸들 사용 가능 여부를 확인하고 선점하세요</li>
               </ul>
             </div>
 
-            <h3>원칙 2: 스토리텔링</h3>
-            <div className="section-card" data-aos="fade-up">
-              <h4>프로젝트 설명의 황금 구조</h4>
-              <table className="lesson-table">
-                <thead>
-                  <tr><th>요소</th><th>설명</th><th>작성 팁</th><th>분량</th></tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>한 줄 요약</strong></td>
-                    <td>프로젝트가 무엇인지 한 문장으로</td>
-                    <td>[타겟]을 위한 [결과물]을 [방법]으로 만들었다</td>
-                    <td>1문장</td>
-                  </tr>
-                  <tr>
-                    <td><strong>문제/배경 (Problem)</strong></td>
-                    <td>왜 이 프로젝트가 필요했는가</td>
-                    <td>데이터, 사용자 불만, 비즈니스 과제로 구체적 맥락 제시</td>
-                    <td>2~3문장</td>
-                  </tr>
-                  <tr>
-                    <td><strong>나의 역할 (Role)</strong></td>
-                    <td>팀 내에서 무엇을 담당했는가</td>
-                    <td>팀 규모, 협업 구조, 내가 주도한 영역 명시</td>
-                    <td>1~2문장</td>
-                  </tr>
-                  <tr>
-                    <td><strong>과정/방법 (Process)</strong></td>
-                    <td>어떤 접근법과 도구를 사용했는가</td>
-                    <td>중간 결과물(스케치, 와이어프레임 등) 시각 자료 포함</td>
-                    <td>3~5문장</td>
-                  </tr>
-                  <tr>
-                    <td><strong>결과/성과 (Result)</strong></td>
-                    <td>구체적인 수치와 임팩트</td>
-                    <td>매출 150% 증가, 이탈률 30% 감소 등 KPI 기반 수치</td>
-                    <td>2~3문장</td>
-                  </tr>
-                  <tr>
-                    <td><strong>배운 점 (Learnings)</strong></td>
-                    <td>이 경험에서 얻은 인사이트</td>
-                    <td>실패에서 배운 점도 가치 있는 콘텐츠</td>
-                    <td>1~2문장</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <h3>원칙 3: 시각 디자인</h3>
+            <h3>개인 웹사이트 필수 구성</h3>
             <table className="lesson-table">
               <thead>
-                <tr><th>디자인 요소</th><th>권장 사항</th><th>주의 사항</th></tr>
+                <tr><th>페이지</th><th>핵심 내용</th><th>팁</th></tr>
               </thead>
               <tbody>
-                <tr><td><strong>레이아웃</strong></td><td>깔끔한 그리드 기반, 충분한 여백</td><td>과도한 장식, 복잡한 구조 지양</td></tr>
-                <tr><td><strong>타이포그래피</strong></td><td>최대 2~3개 폰트, 명확한 위계</td><td>장식적 폰트 남용, 가독성 저하 주의</td></tr>
-                <tr><td><strong>색상</strong></td><td>브랜드 컬러 기반 3~5색 팔레트</td><td>너무 많은 색상, 눈이 피로한 조합 피하기</td></tr>
-                <tr><td><strong>이미지</strong></td><td>고해상도, 일관된 크기/비율, 최적화</td><td>저해상도 이미지, 워터마크 있는 스톡 사진</td></tr>
-                <tr><td><strong>여백</strong></td><td>요소 간 충분한 간격, 숨 쉴 공간</td><td>빈 공간을 무조건 채우려는 시도</td></tr>
-                <tr><td><strong>모바일 대응</strong></td><td>반응형 디자인, 모바일 우선 테스트</td><td>데스크톱에서만 확인 (모바일 방문 60%+)</td></tr>
+                <tr><td><strong>홈 (Home)</strong></td><td>핵심 메시지, 간략한 소개, CTA</td><td>5초 안에 이 사람이 무엇을 하는지 파악할 수 있어야 함</td></tr>
+                <tr><td><strong>소개 (About)</strong></td><td>스토리, 경력 요약, 가치관</td><td>3인칭이 아닌 1인칭으로 작성, 인간적인 면도 보여주세요</td></tr>
+                <tr><td><strong>포트폴리오 (Work)</strong></td><td>대표 프로젝트 3~5개</td><td>각 프로젝트에 과정과 결과를 함께 보여주세요</td></tr>
+                <tr><td><strong>블로그 (Blog)</strong></td><td>전문 분야 콘텐츠</td><td>월 2~4회 정기 발행으로 SEO 효과 극대화</td></tr>
+                <tr><td><strong>연락처 (Contact)</strong></td><td>이메일, SNS, 문의 폼</td><td>간단한 문의 폼 + 응답 예상 시간 명시</td></tr>
               </tbody>
             </table>
 
-            <h2 data-aos="fade-up">3. 이력서 &amp; 자기소개서 브랜딩</h2>
+            <h3>SEO (검색엔진 최적화) 기초</h3>
             <p>
-              이력서와 자기소개서는 단순한 서류가 아니라 당신의 브랜드를 전달하는 마케팅 도구입니다.
-              수백 명의 지원자 중에서 눈에 띄려면, 차별화된 전략이 필요합니다.
-              ATS(지원자추적시스템)를 통과하면서도 인사담당자의 마음을 사로잡는
-              이중 전략이 현대 취업 시장의 필수입니다.
+              내 이름이나 브랜드명으로 검색했을 때 원하는 결과가 상위에 노출되도록 관리해야 합니다.
+              이를 네임 SEO(Name SEO) 또는 퍼스널 SEO라고 합니다.
             </p>
-
-            <h3>ATS 최적화 전략</h3>
-            <div className="callout-box">
-              <h4>ATS(Applicant Tracking System)란?</h4>
-              <p>
-                ATS는 기업이 수많은 지원서를 자동으로 분류하고 선별하는 소프트웨어입니다.
-                대기업의 98%, 중소기업의 66%가 ATS를 사용하며, 지원서의 75%가 ATS 단계에서 탈락합니다.
-                인사담당자의 눈에 닿기 전에 먼저 기계의 눈을 통과해야 합니다.
-              </p>
-            </div>
-
             <table className="lesson-table">
               <thead>
-                <tr><th>ATS 최적화 항목</th><th>해야 할 것</th><th>하지 말아야 할 것</th></tr>
+                <tr><th>SEO 전략</th><th>실행 방법</th><th>효과</th></tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><strong>파일 형식</strong></td>
-                  <td>.docx 또는 텍스트 인식 가능한 .pdf</td>
-                  <td>이미지 기반 PDF, .hwp, 특이한 파일 형식</td>
-                </tr>
-                <tr>
-                  <td><strong>키워드</strong></td>
-                  <td>채용공고의 핵심 키워드를 이력서에 자연스럽게 포함</td>
-                  <td>키워드 과도 삽입(키워드 스터핑), 흰색 글씨 숨기기</td>
-                </tr>
-                <tr>
-                  <td><strong>레이아웃</strong></td>
-                  <td>표준적인 섹션 제목, 단순한 1단 레이아웃</td>
-                  <td>복잡한 표, 그래픽, 텍스트 박스, 머리글/바닥글</td>
-                </tr>
-                <tr>
-                  <td><strong>폰트</strong></td>
-                  <td>표준 폰트 (Arial, Calibri, Noto Sans, 맑은 고딕)</td>
-                  <td>장식적 폰트, 손글씨체, 10pt 미만</td>
-                </tr>
-                <tr>
-                  <td><strong>날짜 형식</strong></td>
-                  <td>2023.01 ~ 2024.12 일관된 형식</td>
-                  <td>형식 불일치, 약 3년 같은 모호한 표현</td>
-                </tr>
-                <tr>
-                  <td><strong>섹션명</strong></td>
-                  <td>경력, 학력, 자격증 등 표준 명칭</td>
-                  <td>나의 여정, 성장 스토리 등 비표준 명칭</td>
-                </tr>
+                <tr><td><strong>이름 일관성</strong></td><td>모든 플랫폼에서 동일한 이름/핸들 사용</td><td>검색 결과 통합, 인지도 향상</td></tr>
+                <tr><td><strong>프로필 완성도</strong></td><td>LinkedIn, GitHub, 포트폴리오 사이트 프로필 100% 작성</td><td>검색 순위 상승</td></tr>
+                <tr><td><strong>콘텐츠 발행</strong></td><td>블로그, 미디엄, 브런치 등에 정기적 글 발행</td><td>검색 결과 점유율 확대</td></tr>
+                <tr><td><strong>백링크 확보</strong></td><td>외부 매체 기고, 인터뷰, 게스트 포스팅</td><td>도메인 권위(DA) 상승</td></tr>
+                <tr><td><strong>구글 Knowledge Panel</strong></td><td>구조화된 데이터, 위키 등재, 다양한 플랫폼 활동</td><td>검색 시 정보 패널 노출</td></tr>
+                <tr><td><strong>이미지 SEO</strong></td><td>프로필 사진 파일명을 본명으로 설정, ALT 태그 활용</td><td>이미지 검색 결과 노출</td></tr>
               </tbody>
             </table>
-
-            <h3>이력서 차별화 전략</h3>
-            <div className="section-card" data-aos="fade-up">
-              <h4>성과 중심 경력 기술법</h4>
-              <table className="lesson-table">
-                <thead>
-                  <tr><th>구분</th><th>BAD (직무 설명)</th><th>GOOD (성과 중심)</th></tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>마케터</strong></td>
-                    <td>SNS 채널 운영 및 콘텐츠 제작 담당</td>
-                    <td>Instagram 릴스 전략 도입으로 팔로워 2,400 &rarr; 8,700명(+262%) 성장, 월 리드 45건 확보</td>
-                  </tr>
-                  <tr>
-                    <td><strong>개발자</strong></td>
-                    <td>프론트엔드 개발 업무 수행</td>
-                    <td>React 기반 SPA 마이그레이션으로 페이지 로딩 속도 60% 개선, Core Web Vitals 모두 Green 달성</td>
-                  </tr>
-                  <tr>
-                    <td><strong>기획자</strong></td>
-                    <td>신규 서비스 기획 및 런칭</td>
-                    <td>B2B SaaS 프로덕트 0 &rarr; 1 기획, 출시 3개월 만에 유료 고객 120사 확보 및 MRR 3,500만원 달성</td>
-                  </tr>
-                  <tr>
-                    <td><strong>디자이너</strong></td>
-                    <td>UI/UX 디자인 담당</td>
-                    <td>결제 플로우 UX 개선으로 전환율 18% &rarr; 27% 향상, 이탈률 35% 감소</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <h3>STAR 기법 자기소개서</h3>
-            <div className="callout-box">
-              <h3>STAR 기법으로 경험 서술하기</h3>
-              <table className="lesson-table">
-                <thead>
-                  <tr><th>요소</th><th>설명</th><th>작성 팁</th><th>분량 비중</th></tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>S - Situation (상황)</strong></td>
-                    <td>어떤 상황/맥락에 놓여 있었는가</td>
-                    <td>구체적인 시간, 장소, 배경 제시. 간결하게</td>
-                    <td>15%</td>
-                  </tr>
-                  <tr>
-                    <td><strong>T - Task (과제)</strong></td>
-                    <td>어떤 역할/책임을 맡았는가</td>
-                    <td>나의 역할을 명확히, 개인 기여분 강조</td>
-                    <td>15%</td>
-                  </tr>
-                  <tr>
-                    <td><strong>A - Action (행동)</strong></td>
-                    <td>어떤 구체적 행동을 취했는가</td>
-                    <td>가장 상세하게 서술, 능동태 사용, 의사결정 과정 포함</td>
-                    <td>50%</td>
-                  </tr>
-                  <tr>
-                    <td><strong>R - Result (결과)</strong></td>
-                    <td>어떤 결과/성과를 달성했는가</td>
-                    <td>구체적 수치 필수, 배운 점이나 이후 변화도 포함</td>
-                    <td>20%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
 
             <div className="info-box tip">
-              <h3>STAR 기법 실전 예시</h3>
+              <h3>온라인 평판 감사 (Online Reputation Audit)</h3>
               <p>
-                <strong>S:</strong> 2024년 상반기, 입사 2개월 차에 담당 SNS 채널의 팔로워 성장이 3개월째 정체(월 2% 미만 성장)되어 있었다.<br />
-                <strong>T:</strong> 인스타그램 채널의 월간 팔로워 성장률을 10% 이상으로 개선하는 임무를 맡았다.<br />
-                <strong>A:</strong> 경쟁사 5개의 콘텐츠를 분석하여 릴스 콘텐츠의 높은 도달률을 확인하고,
-                주 3회 릴스 포스팅 전략을 수립했다. 인기 오디오를 활용한 15초 교육 콘텐츠를 기획하고,
-                팔로워 참여를 높이기 위한 CTA를 모든 포스트에 삽입했다. 또한 해시태그 전략을 개편하고,
-                최적 발행 시간을 A/B 테스트로 확인했다.<br />
-                <strong>R:</strong> 3개월 만에 팔로워가 2,400명에서 8,700명으로 262% 성장했으며,
-                평균 도달률은 기존 대비 4.5배 증가했다. 이 전략은 팀 내 표준 운영 가이드로 채택되었다.
+                지금 바로 자신의 이름을 구글, 네이버, 유튜브에서 검색해 보세요.
+                검색 결과 1페이지(상위 10개)가 모두 내가 원하는 콘텐츠로 채워져 있는지 확인하세요.
+                부정적인 결과가 있다면 긍정적 콘텐츠를 더 많이 생산하여 밀어내는 전략(Content Displacement)을 사용합니다.
+                구글 알림(Google Alerts)에 자신의 이름을 등록하면 새로운 언급을 실시간 모니터링할 수 있습니다.
               </p>
+            </div>
+
+            <h2 data-aos="fade-up">2. 프로페셔널 네트워킹 전략</h2>
+            <p>
+              당신이 아는 것보다 당신을 아는 사람이 더 중요하다는 말은
+              네트워킹의 가치를 극단적으로 표현한 것입니다. 실제로는 당신을 아는 사람이 당신에 대해
+              무엇을 아는가가 더 정확합니다.
+              전략적 네트워킹은 퍼스널 브랜드의 도달 범위를 기하급수적으로 확장시킵니다.
+              LinkedIn 데이터에 따르면, 새로운 직장의 85%는 네트워킹을 통해 얻어집니다.
+            </p>
+
+            <h3>LinkedIn 전략</h3>
+            <table className="lesson-table">
+              <thead>
+                <tr><th>요소</th><th>최적화 방법</th><th>팁</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>프로필 사진</strong></td><td>전문적인 헤드샷, 밝은 배경, 얼굴이 70% 차지</td><td>사진이 있는 프로필은 21배 더 많은 조회수</td></tr>
+                <tr><td><strong>배너 이미지</strong></td><td>전문 분야, 핵심 메시지가 담긴 커스텀 배너</td><td>Canva에서 1584x396px로 제작</td></tr>
+                <tr><td><strong>헤드라인</strong></td><td>직함 | 전문 분야 | 핵심 가치 형태</td><td>단순 직함이 아닌 가치 제안(Value Proposition) 포함</td></tr>
+                <tr><td><strong>About 섹션</strong></td><td>스토리텔링 + 성과 + CTA (2000자 활용)</td><td>첫 3줄이 가장 중요 (더보기 클릭 유도)</td></tr>
+                <tr><td><strong>경험 섹션</strong></td><td>직무 설명이 아닌 성과 중심 기술</td><td>숫자와 구체적 결과로 증명</td></tr>
+                <tr><td><strong>스킬 &amp; 추천</strong></td><td>핵심 스킬 상위 3개 고정, 동료 추천 요청</td><td>추천 50개 이상이면 상위 검색 노출</td></tr>
+                <tr><td><strong>Featured 섹션</strong></td><td>대표 작업물, 기사, 발표 자료 핀 고정</td><td>3~5개의 최고 콘텐츠를 전략적으로 배치</td></tr>
+                <tr><td><strong>추천글</strong></td><td>상사, 동료, 고객으로부터 추천글 확보</td><td>구체적 프로젝트를 언급한 추천글이 효과적</td></tr>
+              </tbody>
+            </table>
+
+            <h3>업계 행사 &amp; 커뮤니티</h3>
+            <div className="callout-box">
+              <h3>효과적인 네트워킹을 위한 행사 활용법</h3>
+              <ul>
+                <li><strong>사전 준비</strong>: 참석자 리스트를 확인하고, 만나고 싶은 3~5명을 미리 LinkedIn에서 연결 요청</li>
+                <li><strong>가치 교환</strong>: 무엇을 도와드릴 수 있을까요로 대화를 시작 (받기 전에 주기)</li>
+                <li><strong>후속 조치</strong>: 행사 후 24시간 이내에 개인화된 메시지와 함께 LinkedIn 연결 요청</li>
+                <li><strong>정기적 참석</strong>: 같은 커뮤니티에 3회 이상 참석하면 아는 사람에서 신뢰하는 사람으로 전환</li>
+                <li><strong>발표자로 참여</strong>: 참석자에서 발표자로 역할을 전환하면 네트워킹 효과가 10배 증가</li>
+                <li><strong>콘텐츠화</strong>: 행사에서 배운 내용을 LinkedIn 포스트나 블로그로 정리 공유</li>
+              </ul>
+            </div>
+
+            <h3>온라인 커뮤니티 활동</h3>
+            <table className="lesson-table">
+              <thead>
+                <tr><th>커뮤니티 유형</th><th>예시</th><th>활용 전략</th><th>브랜딩 효과</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>전문 포럼</strong></td><td>Stack Overflow, 디스쿼스, 개발자 카페</td><td>질문에 성실히 답변하여 전문성 입증</td><td>전문가 포지셔닝</td></tr>
+                <tr><td><strong>Slack/Discord 그룹</strong></td><td>업종별 프라이빗 그룹, 스터디 채널</td><td>적극적 참여로 핵심 멤버가 되기</td><td>인너 서클 진입</td></tr>
+                <tr><td><strong>오픈소스 프로젝트</strong></td><td>GitHub 오픈소스 기여, 번역 프로젝트</td><td>코드 기여, 이슈 해결, 문서화 작업</td><td>기술력 공개 증명</td></tr>
+                <tr><td><strong>LinkedIn 그룹</strong></td><td>업종별 전문 그룹</td><td>인사이트 공유, 토론 참여, 글 발행</td><td>비즈니스 네트워크 확장</td></tr>
+                <tr><td><strong>뉴스레터 커뮤니티</strong></td><td>Substack, 메일리 커뮤니티</td><td>뉴스레터 발행 + 상호 추천</td><td>구독자 기반 영향력</td></tr>
+              </tbody>
+            </table>
+
+            <h3>네트워크 관리 매트릭스</h3>
+            <div className="section-card" data-aos="fade-up">
+              <table className="lesson-table">
+                <thead>
+                  <tr><th>관계 등급</th><th>대상</th><th>접촉 빈도</th><th>방법</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>A등급 (핵심, 15명)</strong></td><td>멘토, 핵심 파트너, 주요 고객, 추천인</td><td>월 1~2회</td><td>정기 미팅, 직접 연락, 생일/기념일 축하</td></tr>
+                  <tr><td><strong>B등급 (중요, 50명)</strong></td><td>동료, 업계 지인, 전 직장 인맥</td><td>분기 1회</td><td>SNS 소통, 행사 참석 시 만남, 콘텐츠 공유</td></tr>
+                  <tr><td><strong>C등급 (일반, 150명)</strong></td><td>넓은 네트워크, 행사 만남</td><td>반기 1회</td><td>뉴스레터, 명절 인사, LinkedIn 소통</td></tr>
+                </tbody>
+              </table>
             </div>
 
             <div className="info-box warning">
-              <h3>이력서/자기소개서 주의사항</h3>
+              <h3>네트워킹에서 피해야 할 실수</h3>
               <ul>
-                <li><strong>거짓 기재</strong>: 학력, 경력, 자격증 허위 기재는 법적 문제를 일으킬 수 있습니다.</li>
-                <li><strong>오타/맞춤법</strong>: 단 1개의 오타도 치명적입니다. 3번 이상 검수하세요.</li>
-                <li><strong>개인정보</strong>: 주민등록번호, 상세 주소, 가족 정보 등 불필요한 개인정보 기재 지양</li>
-                <li><strong>일반적 표현</strong>: 성실하고 책임감 있는 같은 추상적 표현 대신 구체적 사례로 증명하세요.</li>
-                <li><strong>장문의 서사</strong>: 이력서는 2페이지 이내, 자기소개서 항목별 500자 이내로 간결하게 작성</li>
+                <li><strong>일방적 요청</strong>: 처음 만나자마자 부탁이나 세일즈를 시도하지 마세요.</li>
+                <li><strong>양 위주 연결</strong>: 500명과 피상적 연결보다 50명과 깊은 관계가 더 가치 있습니다.</li>
+                <li><strong>후속 조치 없음</strong>: 명함만 교환하고 연락하지 않는 것은 시간 낭비입니다.</li>
+                <li><strong>자기 이야기만</strong>: 80% 듣고 20% 말하는 것이 좋은 네트워킹입니다.</li>
+                <li><strong>SNS 스팸</strong>: 무분별한 DM, 댓글 광고는 오히려 평판을 떨어뜨립니다.</li>
+                <li><strong>필요할 때만 연락</strong>: 평소에 관계를 유지하지 않다가 부탁할 때만 연락하는 것은 최악입니다.</li>
               </ul>
             </div>
 
-            <h2 data-aos="fade-up">4. 개인 웹사이트 제작 가이드</h2>
+            <h2 data-aos="fade-up">3. 강연/인터뷰 기회 만들기</h2>
             <p>
-              개인 웹사이트는 당신이 완전히 통제할 수 있는 유일한 디지털 공간입니다.
-              소셜 미디어는 알고리즘이나 플랫폼 정책에 의존하지만, 개인 웹사이트는
-              당신만의 규칙으로 운영됩니다. 디지털 부동산이라는 표현처럼,
-              소셜 미디어가 임대라면 개인 웹사이트는 소유입니다.
+              강연과 인터뷰는 퍼스널 브랜드를 확립하는 가장 강력한 방법 중 하나입니다.
+              청중 앞에서 자신의 전문 지식을 공유하면, 단순한 전문가에서 사고 리더(Thought Leader)로
+              포지셔닝될 수 있습니다. 처음부터 대규모 행사를 목표로 하지 말고,
+              작은 모임에서 시작해 점진적으로 무대를 넓혀가세요.
             </p>
 
-            <h3>플랫폼별 상세 가이드</h3>
+            <h3>강연 기회의 단계별 확장</h3>
             <table className="lesson-table">
               <thead>
-                <tr><th>플랫폼</th><th>난이도</th><th>비용</th><th>장점</th><th>단점</th><th>추천 대상</th></tr>
+                <tr><th>단계</th><th>기회 유형</th><th>준비물</th><th>예상 규모</th><th>소요 기간</th></tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>WordPress.org</strong></td>
-                  <td>중간</td>
-                  <td>호스팅 월 $3~15 + 도메인 연 $10~15</td>
-                  <td>무한 확장성, 수천 개 플러그인, SEO 최적화, 완전한 소유권</td>
-                  <td>호스팅 관리 필요, 보안 업데이트, 학습 곡선</td>
-                  <td>블로거, 프리랜서, 장기 운영</td>
+                  <td><strong>1단계 (입문)</strong></td>
+                  <td>사내 발표, 스터디 그룹, 소규모 밋업</td>
+                  <td>발표 자료 + 경험 정리</td>
+                  <td>10~30명</td>
+                  <td>즉시 시작</td>
                 </tr>
                 <tr>
-                  <td><strong>Wix</strong></td>
-                  <td>쉬움</td>
-                  <td>무료~월 $27</td>
-                  <td>직관적 드래그 앤 드롭, 500+ 템플릿, AI 디자인 도우미</td>
-                  <td>SEO 제한, 사이트 이전 불가, 무료 플랜 광고</td>
-                  <td>비개발자, 빠른 제작, 포트폴리오</td>
+                  <td><strong>2단계 (성장)</strong></td>
+                  <td>업계 세미나, 웨비나, 팟캐스트 게스트</td>
+                  <td>발표 영상 + 블로그 + 소셜 미디어 활동</td>
+                  <td>30~100명</td>
+                  <td>3~6개월</td>
                 </tr>
                 <tr>
-                  <td><strong>Squarespace</strong></td>
-                  <td>쉬움</td>
-                  <td>월 $16~$49</td>
-                  <td>프리미엄 디자인 템플릿, 올인원 솔루션</td>
-                  <td>유료만 가능, 한국어 제한</td>
-                  <td>디자이너, 크리에이터</td>
+                  <td><strong>3단계 (확장)</strong></td>
+                  <td>컨퍼런스 발표, TEDx, 기업 초청 강연</td>
+                  <td>이전 강연 영상 + 언론 기사 + 저서/콘텐츠</td>
+                  <td>100~500명</td>
+                  <td>6~18개월</td>
                 </tr>
                 <tr>
-                  <td><strong>Notion</strong></td>
-                  <td>매우 쉬움</td>
-                  <td>무료~월 $8 (Super, Oopy로 사이트화)</td>
-                  <td>가장 빠른 제작, 쉬운 업데이트, 협업 가능</td>
-                  <td>디자인 제한, SEO 약점, 커스텀 도메인 유료</td>
-                  <td>초보자, 빠른 프로토타입</td>
-                </tr>
-                <tr>
-                  <td><strong>GitHub Pages</strong></td>
-                  <td>어려움</td>
-                  <td>완전 무료 (커스텀 도메인도 무료 연결)</td>
-                  <td>무료, 개발 역량 증명, Git 기반 버전 관리, 빠른 속도</td>
-                  <td>HTML/CSS/JS 필요, 동적 기능 제한</td>
-                  <td>개발자, 기술 포트폴리오</td>
+                  <td><strong>4단계 (전문)</strong></td>
+                  <td>국제 컨퍼런스, 기조연설, 방송 출연, 대학 특강</td>
+                  <td>스피커 프로필 + 에이전시 연계 + 저서</td>
+                  <td>500명 이상</td>
+                  <td>1~3년</td>
                 </tr>
               </tbody>
             </table>
 
             <div className="callout-box">
-              <h3>웹사이트 제작 단계별 가이드</h3>
+              <h4>팟캐스트 출연 전략</h4>
+              <p>
+                팟캐스트는 퍼스널 브랜딩의 숨겨진 보물입니다. 수천 개의 팟캐스트가 매주 게스트를
+                찾고 있으며, 진입 장벽이 상대적으로 낮습니다.
+                팟캐스트 청취자는 평균 80% 이상의 완청률을 보이며, 이는 다른 매체에 비해 매우 높은 수치입니다.
+              </p>
               <ul>
-                <li><strong>1단계: 기획 (1일)</strong> — 목적 정의, 타겟 설정, 페이지 구조(사이트맵) 설계, 레퍼런스 수집</li>
-                <li><strong>2단계: 도메인 &amp; 호스팅 (1시간)</strong> — 도메인 구매(Namecheap, 가비아), 호스팅 세팅</li>
-                <li><strong>3단계: 디자인 (1~3일)</strong> — 템플릿 선택 또는 와이어프레임 제작, 컬러/폰트 결정</li>
-                <li><strong>4단계: 콘텐츠 제작 (2~5일)</strong> — 소개글, 프로젝트 설명, 이미지, 포트폴리오 구성</li>
-                <li><strong>5단계: 개발/구현 (1~7일)</strong> — 선택한 플랫폼에서 사이트 구축</li>
-                <li><strong>6단계: 테스트 (1일)</strong> — 모바일 테스트, 브라우저 호환성, 링크 확인, 속도 체크</li>
-                <li><strong>7단계: 론칭 &amp; 홍보 (지속)</strong> — SSL 인증서, Google Search Console 등록, SNS 공유</li>
+                <li><strong>리서치</strong>: 자신의 전문 분야와 관련된 팟캐스트 20개 리스트업</li>
+                <li><strong>청취</strong>: 최소 3개 에피소드를 듣고, 호스트의 스타일과 관심사 파악</li>
+                <li><strong>피칭</strong>: 구체적인 주제 제안 + 자신만이 제공할 수 있는 고유 인사이트 강조</li>
+                <li><strong>준비</strong>: 핵심 메시지 3개 + 흥미로운 에피소드 + 실용적 팁 준비</li>
+                <li><strong>홍보</strong>: 출연 에피소드를 자신의 채널에서 적극 공유하고, 호스트와 관계 유지</li>
+                <li><strong>자체 제작</strong>: 게스트 출연이 익숙해지면 자신만의 팟캐스트 론칭도 고려</li>
               </ul>
             </div>
 
-            <div className="info-box tip">
-              <h3>웹사이트 필수 설정 체크리스트</h3>
-              <ul>
-                <li>SSL 인증서 설치 (https:// 보안 연결) — 대부분 호스팅에서 무료 제공</li>
-                <li>Google Analytics 4 연동 — 방문자 행동 분석</li>
-                <li>Google Search Console 등록 — 검색 노출 모니터링</li>
-                <li>SEO 기본 설정 — title 태그, meta description, OG 태그</li>
-                <li>파비콘(Favicon) 설정 — 브라우저 탭의 작은 아이콘</li>
-                <li>404 페이지 커스텀 — 브랜드에 맞는 에러 페이지</li>
-                <li>사이트 속도 최적화 — Google PageSpeed Insights에서 90점 이상 목표</li>
-              </ul>
-            </div>
-
-            <h2 data-aos="fade-up">5. LinkedIn 프로필 최적화</h2>
-            <p>
-              LinkedIn은 전 세계 10억 명 이상의 전문가가 활동하는 최대의 비즈니스 네트워킹 플랫폼입니다.
-              취업, 이직, 프리랜서 영업, B2B 파트너십 등 비즈니스 관련 모든 활동에서
-              LinkedIn 프로필은 당신의 디지털 명함이자 온라인 이력서 역할을 합니다.
-              프로필 완성도가 높을수록 검색 노출이 40배 증가한다는 LinkedIn 공식 데이터가 있습니다.
-            </p>
-
-            <h3>LinkedIn 프로필 완전 정복</h3>
+            <h3>웨비나 &amp; 온라인 강연</h3>
             <table className="lesson-table">
               <thead>
-                <tr><th>섹션</th><th>최적화 방법</th><th>작성 예시</th></tr>
+                <tr><th>플랫폼</th><th>특징</th><th>적합한 용도</th></tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><strong>프로필 사진</strong></td>
-                  <td>전문적 헤드샷, 밝은 배경, 얼굴이 화면의 60~70%</td>
-                  <td>정장 또는 비즈니스 캐주얼, 미소, 정면 또는 45도 각도</td>
-                </tr>
-                <tr>
-                  <td><strong>배너 이미지 (1584x396px)</strong></td>
-                  <td>전문 분야, 핵심 키워드, 브랜드 컬러 반영</td>
-                  <td>Data-Driven Marketing | Helping Brands Grow 3x</td>
-                </tr>
-                <tr>
-                  <td><strong>헤드라인 (최대 220자)</strong></td>
-                  <td>직함 | 전문 영역 | 가치 제안 형태</td>
-                  <td>Senior UX Designer | 사용자 중심 디자인으로 전환율 2배 향상</td>
-                </tr>
-                <tr>
-                  <td><strong>About (최대 2,600자)</strong></td>
-                  <td>첫 3줄 Hook &rarr; 스토리 &rarr; 핵심 성과 &rarr; 스킬 &rarr; CTA</td>
-                  <td>1인칭, 대화체, 줄바꿈 활용</td>
-                </tr>
-                <tr>
-                  <td><strong>Featured (3~5개)</strong></td>
-                  <td>대표 작업물, 기사, 발표 자료, 수상 이력</td>
-                  <td>썸네일 이미지가 매력적인 콘텐츠 우선 배치</td>
-                </tr>
-                <tr>
-                  <td><strong>Experience</strong></td>
-                  <td>회사 로고 연결, 성과 중심 기술, 숫자 포함</td>
-                  <td>관리가 아닌 달성으로 서술, 동사로 시작</td>
-                </tr>
-                <tr>
-                  <td><strong>Skills (50개까지)</strong></td>
-                  <td>핵심 스킬 3개를 상단 고정, 동료 보증 요청</td>
-                  <td>99+ 보증 받은 스킬은 검색 순위에 큰 영향</td>
-                </tr>
-                <tr>
-                  <td><strong>Recommendations</strong></td>
-                  <td>상사, 동료, 고객에게 추천글 요청 (최소 3개)</td>
-                  <td>구체적 프로젝트를 언급한 추천이 효과적</td>
-                </tr>
+                <tr><td><strong>Zoom Webinar</strong></td><td>대규모 참석자, 녹화 기능, Q&amp;A</td><td>기업 웨비나, 전문 세미나</td></tr>
+                <tr><td><strong>YouTube Live</strong></td><td>무료, 무제한 시청자, 아카이빙</td><td>공개 강연, 튜토리얼</td></tr>
+                <tr><td><strong>LinkedIn Live</strong></td><td>전문가 네트워크 도달, 높은 인게이지먼트</td><td>B2B 콘텐츠, 업계 대담</td></tr>
+                <tr><td><strong>Instagram Live</strong></td><td>친밀한 소통, 실시간 댓글</td><td>Q&amp;A, 비하인드, 가벼운 주제</td></tr>
               </tbody>
             </table>
 
-            <div className="info-box tip">
-              <h3>LinkedIn SSI(Social Selling Index) 점수 확인</h3>
-              <p>
-                linkedin.com/sales/ssi에서 자신의 SSI 점수를 무료로 확인할 수 있습니다.
-                SSI는 프로필 브랜딩, 관계 구축, 인사이트 공유, 관계 강화의 4개 영역을
-                각 25점 만점으로 평가하며, 총 100점 만점입니다.
-                SSI 70점 이상이면 상위 10%, 80점 이상이면 상위 1%에 해당합니다.
-                SSI 점수가 높을수록 LinkedIn 알고리즘에서 콘텐츠 노출 우선순위가 높아집니다.
-              </p>
-            </div>
-
-            <h2 data-aos="fade-up">6. 비디오 포트폴리오 &amp; 릴</h2>
+            <h2 data-aos="fade-up">4. 사이드 프로젝트로 전문성 입증</h2>
             <p>
-              비디오 콘텐츠는 텍스트나 이미지보다 65% 더 높은 기억 유지율을 보입니다.
-              특히 영상 분야, 마케팅, 크리에이터 직군에서는 비디오 포트폴리오가 필수이며,
-              다른 분야에서도 자기소개 영상이나 프로젝트 데모 영상은 차별화 요소가 됩니다.
+              사이드 프로젝트는 본업 외에 자발적으로 진행하는 프로젝트로,
+              포트폴리오 강화, 새로운 스킬 습득, 전문성 입증의 강력한 도구입니다.
+              말로 하지 말고 보여줘라(Show, Don't Tell)는 퍼스널 브랜딩의 핵심 원칙이며,
+              사이드 프로젝트는 이를 가장 잘 실천하는 방법입니다.
             </p>
 
-            <h3>비디오 포트폴리오 유형</h3>
+            <h3>사이드 프로젝트 유형</h3>
             <table className="lesson-table">
               <thead>
-                <tr><th>유형</th><th>길이</th><th>내용</th><th>용도</th></tr>
+                <tr><th>유형</th><th>예시</th><th>장점</th><th>소요 시간</th></tr>
               </thead>
               <tbody>
-                <tr><td><strong>쇼릴 (Showreel)</strong></td><td>60~90초</td><td>최고의 작업물 하이라이트 모음</td><td>첫인상, SNS 공유, 포트폴리오 메인</td></tr>
-                <tr><td><strong>자기소개 영상</strong></td><td>60~120초</td><td>나는 누구이고, 어떤 가치를 제공하는가</td><td>웹사이트 About, LinkedIn, 이메일 서명</td></tr>
-                <tr><td><strong>프로젝트 케이스 스터디</strong></td><td>2~5분</td><td>프로젝트의 문제 &rarr; 과정 &rarr; 결과를 영상으로</td><td>포트폴리오 상세 페이지, 프레젠테이션</td></tr>
-                <tr><td><strong>튜토리얼/데모</strong></td><td>3~10분</td><td>기술 시연, 도구 사용법, 프로세스 공유</td><td>YouTube, 블로그, 교육 콘텐츠</td></tr>
-                <tr><td><strong>숏폼 릴</strong></td><td>15~60초</td><td>빠른 팁, 비하인드, 비포/애프터</td><td>Instagram Reels, TikTok, YouTube Shorts</td></tr>
+                <tr><td><strong>콘텐츠 프로젝트</strong></td><td>블로그 시리즈, 뉴스레터, 유튜브 채널, 팟캐스트</td><td>꾸준함 증명, SEO 효과, 사고 리더십</td><td>주 3~5시간</td></tr>
+                <tr><td><strong>오픈소스 기여</strong></td><td>GitHub 프로젝트, 라이브러리 개발, 번역, 문서화</td><td>기술력 증명, 글로벌 네트워크</td><td>주 2~4시간</td></tr>
+                <tr><td><strong>커뮤니티 운영</strong></td><td>밋업 주최, 스터디 그룹, 온라인 커뮤니티 운영</td><td>리더십 증명, 네트워크 확장, 영향력</td><td>주 2~3시간</td></tr>
+                <tr><td><strong>제품/서비스 론칭</strong></td><td>앱, 웹서비스, 온라인 강의, 전자책, SaaS</td><td>기업가 정신, 실행력, 수익화 가능</td><td>프로젝트별 상이</td></tr>
+                <tr><td><strong>사회 공헌</strong></td><td>재능 기부, 멘토링, 비영리 프로젝트, 교육 봉사</td><td>가치관 증명, 사회적 신뢰, CSR</td><td>월 4~8시간</td></tr>
+                <tr><td><strong>연구/리서치</strong></td><td>업계 리포트, 트렌드 분석, 설문 조사, 백서 발행</td><td>데이터 기반 전문성, 인용 효과</td><td>프로젝트별 상이</td></tr>
               </tbody>
             </table>
 
             <div className="callout-box">
-              <h3>비디오 포트폴리오 제작 팁</h3>
+              <h3>Building in Public (공개 개발)</h3>
+              <p>
+                Building in Public은 프로젝트의 진행 과정을 실시간으로 공개하는 트렌드입니다.
+                완성된 결과물만 공개하는 대신, 아이디어 구상 단계부터 개발, 실패, 성공까지
+                모든 여정을 SNS나 블로그에 공유합니다.
+              </p>
               <ul>
-                <li><strong>첫 3초</strong>: 가장 임팩트 있는 장면이나 질문으로 시작하세요. 3초 안에 시선을 잡지 못하면 이탈합니다.</li>
-                <li><strong>음악</strong>: 저작권 무료 음악을 활용하세요 (Epidemic Sound, Artlist, YouTube Audio Library)</li>
-                <li><strong>자막</strong>: 85%의 SNS 영상이 무음으로 재생됩니다. 자막은 필수입니다.</li>
-                <li><strong>브랜딩</strong>: 인트로/아웃트로에 로고, 색상, 연락처를 일관되게 넣으세요.</li>
-                <li><strong>CTA</strong>: 영상 마지막에 포트폴리오 사이트 방문, 이메일 문의 등 행동 유도.</li>
-                <li><strong>플랫폼</strong>: YouTube(장기 보관), Vimeo(프리미엄 화질), Instagram Reels(발견 채널)을 용도에 맞게 활용</li>
+                <li><strong>투명성</strong>: 매출, 사용자 수, 실패 경험까지 솔직하게 공유</li>
+                <li><strong>참여 유도</strong>: 팔로워가 프로젝트에 의견을 제시하고 함께 성장하는 느낌</li>
+                <li><strong>신뢰 구축</strong>: 과정의 진정성이 완성된 결과보다 강한 신뢰를 만듦</li>
+                <li><strong>마케팅 효과</strong>: 론칭 전부터 잠재 고객과 팬을 확보</li>
               </ul>
             </div>
 
-            <h2 data-aos="fade-up">7. 디지털 포트폴리오 플랫폼</h2>
+            <h2 data-aos="fade-up">5. 퍼스널 브랜딩 콘텐츠 전략</h2>
             <p>
-              개인 웹사이트 외에도, 전문 포트폴리오 플랫폼을 활용하면
-              해당 분야의 커뮤니티와 연결되고, 플랫폼의 자체 트래픽을 통해 더 많은 노출을 얻을 수 있습니다.
-              개인 웹사이트 + 전문 플랫폼 조합이 가장 효과적입니다.
+              퍼스널 브랜딩에서 콘텐츠는 당신의 자산입니다. 한 번 만들어진 양질의 콘텐츠는
+              24시간 365일 당신을 대신하여 전문성을 증명하고, 새로운 기회를 끌어옵니다.
+              핵심은 어디서, 무엇을, 어떤 빈도로 발행할 것인지 전략적으로 결정하는 것입니다.
             </p>
 
+            <h3>뉴스레터 운영</h3>
             <table className="lesson-table">
               <thead>
-                <tr><th>플랫폼</th><th>주요 분야</th><th>특징</th><th>활용 팁</th><th>비용</th></tr>
+                <tr><th>항목</th><th>권장 사항</th><th>이유</th></tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><strong>Behance</strong></td>
-                  <td>디자인, 일러스트, 사진, 영상</td>
-                  <td>Adobe 생태계, 글로벌 커뮤니티, 큐레이션, 채용 연계</td>
-                  <td>프로젝트별 상세 프로세스 공유, 태그 활용, 정기 업데이트</td>
-                  <td>무료</td>
-                </tr>
-                <tr>
-                  <td><strong>Dribbble</strong></td>
-                  <td>UI/UX, 그래픽, 모션</td>
-                  <td>초대제(현재 개방), 채용 보드, 짧은 Shot 포맷</td>
-                  <td>400x300px 샷으로 임팩트 있는 비주얼, 과정 포함</td>
-                  <td>무료, Pro $5/월</td>
-                </tr>
-                <tr>
-                  <td><strong>GitHub</strong></td>
-                  <td>소프트웨어 개발</td>
-                  <td>코드 저장소, 오픈소스, 잔디(커밋) 그래프, Actions</td>
-                  <td>README.md 꼼꼼히 작성, 프로필 README, 핀 프로젝트 6개</td>
-                  <td>무료</td>
-                </tr>
-                <tr>
-                  <td><strong>Notion</strong></td>
-                  <td>기획, PM, 마케팅, 범용</td>
-                  <td>빠른 제작, 다양한 블록, 협업, Super/Oopy로 웹사이트화</td>
-                  <td>템플릿 활용, 토글로 상세 정보 관리, 깔끔한 레이아웃</td>
-                  <td>무료~월 $8</td>
-                </tr>
-                <tr>
-                  <td><strong>Brunch (브런치)</strong></td>
-                  <td>글쓰기, 에세이, 칼럼</td>
-                  <td>카카오 연동, 작가 인증, 매거진 시스템, 한국 SEO 우수</td>
-                  <td>시리즈로 전문성 구축, 매거진 참여, 정기 발행</td>
-                  <td>무료</td>
-                </tr>
-                <tr>
-                  <td><strong>Medium</strong></td>
-                  <td>글쓰기, 기술, 비즈니스</td>
-                  <td>글로벌 오디언스, 큐레이션, 유료 구독 모델</td>
-                  <td>영문 콘텐츠로 글로벌 도달, Publication 참여</td>
-                  <td>무료, 파트너 프로그램</td>
-                </tr>
+                <tr><td><strong>발행 주기</strong></td><td>주 1회 고정 요일/시간</td><td>구독자의 기대감 형성, 루틴화</td></tr>
+                <tr><td><strong>길이</strong></td><td>읽는 데 5~7분 (1500~2500자)</td><td>너무 길면 이탈, 너무 짧으면 가치 부족</td></tr>
+                <tr><td><strong>구성</strong></td><td>인사 &rarr; 주제 &rarr; 실용 팁 &rarr; CTA &rarr; P.S.</td><td>친근하면서도 구조적인 형태</td></tr>
+                <tr><td><strong>제목</strong></td><td>호기심 유발 + 구체적 숫자/키워드</td><td>오픈율 직접 좌우 (A/B 테스트 필수)</td></tr>
+                <tr><td><strong>플랫폼</strong></td><td>Substack, 메일리, Beehiiv, ConvertKit</td><td>무료 시작 가능, 구독자 관리 용이</td></tr>
+                <tr><td><strong>성장 전략</strong></td><td>SNS 홍보, 상호 추천, 리드 마그넷</td><td>초기 100명 확보가 가장 어렵고 중요</td></tr>
               </tbody>
             </table>
 
-            <div className="info-box tip">
-              <h3>포트폴리오 관리의 핵심</h3>
-              <p>
-                포트폴리오는 만들어놓고 끝이 아닙니다. 분기마다 새로운 프로젝트를 추가하고,
-                오래된 작업물은 정리하세요. 3~5개의 최신이면서 가장 잘한 프로젝트만
-                유지하는 것이 10개의 평범한 프로젝트보다 훨씬 효과적입니다.
-                또한 각 플랫폼에 동일한 프로젝트를 올리더라도, 플랫폼 특성에 맞게 형태를 최적화하세요.
-                Behance에는 상세 프로세스를, Dribbble에는 임팩트 있는 비주얼을,
-                GitHub에는 코드와 README를 중심으로 구성합니다.
-              </p>
-            </div>
+            <h2 data-aos="fade-up">6. 오프라인 브랜딩</h2>
+            <p>
+              디지털이 아무리 중요해도, 실제 만남에서 형성되는 인상은 대체 불가능합니다.
+              첫인상은 7초 만에 결정되며, 그 인상을 바꾸는 데는 평균 21번의 추가 접촉이 필요합니다.
+              오프라인 브랜딩은 온라인 프레즌스의 신뢰성을 높이는 핵심 보완 요소입니다.
+            </p>
+
+            <h3>엘리베이터 피치 (Elevator Pitch)</h3>
+            <p>
+              엘리베이터 피치란 엘리베이터를 타고 이동하는 30~60초 동안 자신을 효과적으로
+              소개하는 짧은 자기소개입니다. 네트워킹 행사, 면접, 우연한 만남 등
+              어떤 상황에서도 자연스럽게 활용할 수 있어야 합니다.
+            </p>
 
             <div className="section-card" data-aos="fade-up">
-              <h3>GitHub 프로필 README 가이드 (개발자 필수)</h3>
-              <p>
-                GitHub 프로필 README는 username/username 리포지토리에 README.md를 생성하면 프로필 상단에 표시됩니다.
-                다음 요소를 포함하면 효과적입니다:
-              </p>
+              <h4>엘리베이터 피치 공식 (30초 버전)</h4>
+              <table className="lesson-table">
+                <thead>
+                  <tr><th>순서</th><th>요소</th><th>시간</th><th>예시</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1</strong></td>
+                    <td>Hook (관심 끌기)</td>
+                    <td>5초</td>
+                    <td>혹시 SNS 콘텐츠 만드는 데 매일 3시간 이상 쓰시나요?</td>
+                  </tr>
+                  <tr>
+                    <td><strong>2</strong></td>
+                    <td>Who (나는 누구)</td>
+                    <td>5초</td>
+                    <td>저는 김브랜드, 콘텐츠 전략가입니다.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3</strong></td>
+                    <td>What (무엇을 하는가)</td>
+                    <td>10초</td>
+                    <td>소규모 브랜드가 AI 도구를 활용해 콘텐츠 제작 시간을 70% 줄이도록 돕습니다.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>4</strong></td>
+                    <td>Proof (증거)</td>
+                    <td>5초</td>
+                    <td>지난 1년간 50개 브랜드의 콘텐츠 운영을 최적화했습니다.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>5</strong></td>
+                    <td>CTA (행동 유도)</td>
+                    <td>5초</td>
+                    <td>혹시 관심 있으시면 커피 한잔 하면서 이야기 나눌 수 있을까요?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>첫인상 관리 (메라비언의 법칙)</h3>
+            <table className="lesson-table">
+              <thead>
+                <tr><th>요소</th><th>비중</th><th>관리 방법</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>시각적 요소 (외모, 복장, 표정)</strong></td><td>55%</td><td>TPO에 맞는 복장, 깔끔한 그루밍, 자신감 있는 자세, 자연스러운 미소</td></tr>
+                <tr><td><strong>청각적 요소 (목소리, 톤, 속도)</strong></td><td>38%</td><td>명확한 발음, 적절한 속도(분당 120~150단어), 따뜻한 톤, 적절한 볼륨</td></tr>
+                <tr><td><strong>언어적 요소 (말의 내용)</strong></td><td>7%</td><td>준비된 자기소개, 상대에 대한 관심 표현, 경청의 태도</td></tr>
+              </tbody>
+            </table>
+
+            <h2 data-aos="fade-up">7. 실습 과제</h2>
+
+            <div className="exercise-box">
+              <h3>과제 A: 나만의 엘리베이터 피치 만들기</h3>
+              <p>30초 버전과 60초 버전의 엘리베이터 피치를 각각 작성하세요:</p>
               <ul>
-                <li>간략한 자기소개와 현재 관심사/학습 중인 기술</li>
-                <li>기술 스택 배지 (shields.io 활용)</li>
-                <li>대표 프로젝트 링크</li>
-                <li>GitHub 활동 통계 (github-readme-stats 활용)</li>
-                <li>블로그/포트폴리오 링크</li>
-                <li>연락처 및 SNS 링크</li>
+                <li><strong>30초 버전</strong>: Hook + Who + What + Proof + CTA (5요소 포함)</li>
+                <li><strong>60초 버전</strong>: 30초 버전 + 구체적 사례/스토리 추가</li>
+                <li>실제로 소리 내어 읽으며 시간을 측정하세요</li>
+                <li>스마트폰으로 녹음하여 톤, 속도, 명확성을 자체 평가하세요</li>
+                <li>3명 이상에게 들려주고 피드백을 받아 수정하세요</li>
               </ul>
             </div>
 
-            <h2 data-aos="fade-up">8. 실습 과제</h2>
-
             <div className="exercise-box">
-              <h3>과제 A: 온라인 포트폴리오 페이지 기획서 작성</h3>
-              <p>다음 항목을 포함하는 포트폴리오 기획서를 작성하세요:</p>
+              <h3>과제 B: 온라인 프레즌스 감사 &amp; 개선 계획</h3>
+              <p>자신의 온라인 프레즌스를 종합적으로 점검하세요:</p>
               <ul>
-                <li><strong>목적 &amp; 타겟</strong>: 이 포트폴리오의 주요 용도와 타겟 오디언스 정의</li>
-                <li><strong>플랫폼 선택</strong>: 사용할 제작 도구/플랫폼과 선택 이유</li>
-                <li><strong>사이트맵</strong>: 페이지 구조 (홈, 소개, 프로젝트, 블로그, 연락처 등)</li>
-                <li><strong>와이어프레임</strong>: 주요 페이지의 레이아웃 스케치 (손 그림도 가능)</li>
-                <li><strong>자기소개문</strong>: 브랜드 포지셔닝 스테이트먼트 기반 소개글 (150자 이내)</li>
-                <li><strong>프로젝트 3개</strong>: 각 프로젝트에 STAR 기법을 적용한 상세 설명</li>
-                <li><strong>비주얼 톤</strong>: 컬러 팔레트(3~5색), 폰트 선택, 레이아웃 스타일, 레퍼런스 3개</li>
-                <li><strong>CTA 설계</strong>: 방문자에게 원하는 행동과 전환 경로</li>
+                <li>구글/네이버에 본인 이름 검색 후 상위 10개 결과 기록 및 평가</li>
+                <li>LinkedIn SSI(Social Selling Index) 점수 확인</li>
+                <li>모든 SNS 프로필 사진, 소개글, 핸들 일관성 점검표 작성</li>
+                <li>개선이 필요한 3가지 항목 선정 및 구체적 실행 계획 수립</li>
               </ul>
             </div>
 
             <div className="exercise-box">
-              <h3>과제 B: STAR 기법 자기소개서 작성</h3>
-              <p>STAR 기법을 활용하여 자기소개서 경험 서술 2개를 작성하세요:</p>
+              <h3>과제 C: LinkedIn 포스트 3편 작성 &amp; 발행</h3>
+              <p>다음 유형별로 LinkedIn 포스트를 각 1편씩 작성하세요:</p>
               <ul>
-                <li>각 항목 300~500자 내외</li>
-                <li>구체적 수치와 성과 포함</li>
-                <li>Action(행동) 부분을 가장 상세하게 서술</li>
-                <li>1개는 성공 경험, 1개는 실패에서 배운 교훈</li>
-              </ul>
-            </div>
-
-            <div className="exercise-box">
-              <h3>과제 C: 이력서 리브랜딩</h3>
-              <p>기존 이력서를 성과 중심으로 리브랜딩하세요:</p>
-              <ul>
-                <li>모든 경력 항목을 직무 설명에서 성과 중심으로 재작성</li>
-                <li>ATS 최적화 체크리스트 반영</li>
-                <li>지원하고자 하는 직군의 JD(Job Description)를 1개 선정하고, 해당 JD에 맞춰 커스텀</li>
-                <li>ATS 시뮬레이터(Jobscan 등)로 매칭 점수 확인</li>
+                <li><strong>경험 공유형</strong>: 직장/프로젝트에서의 실제 경험과 교훈 (800자 이상)</li>
+                <li><strong>인사이트형</strong>: 업계 트렌드에 대한 나만의 관점 (600자 이상)</li>
+                <li><strong>성과 공유형</strong>: 최근 달성한 성과와 과정 (400자 이상)</li>
+                <li>실제 LinkedIn에 발행하고, 1주일간 인게이지먼트 데이터 분석</li>
               </ul>
             </div>
 
             <div className="info-box tip">
               <h3>다음 주 예고</h3>
               <p>
-                11주차에서는 마케팅 분석과 KPI에 대해 배웁니다. Google Analytics 4 활용법,
-                소셜 미디어 분석, ROI 계산, A/B 테스트, 데이터 시각화 등
-                데이터 기반으로 브랜딩 성과를 측정하고 개선하는 전략을 다룹니다.
+                11주차에서는 포트폴리오 브랜딩을 다룹니다.
+                나의 역량과 경험을 효과적으로 보여주는 포트폴리오 구성 원칙, 이력서 &amp; 자기소개서 브랜딩,
+                개인 웹사이트 제작 가이드, 디지털 포트폴리오 플랫폼 활용법을 집중적으로 배웁니다.
               </p>
             </div>
 
             <div className="lesson-nav">
-              <Link to="/lessons/personal-branding" className="lesson-nav-btn prev">&larr; 9주차: 개인 브랜딩 실전</Link>
-              <Link to="/lessons/marketing-analytics" className="lesson-nav-btn next">11주차: 마케팅 분석 &amp; KPI &rarr;</Link>
+              <Link to="/lessons/corporate-pr" className="lesson-nav-btn prev">&larr; 9주차: 기업 홍보 &amp; PR</Link>
+              <Link to="/lessons/portfolio-branding" className="lesson-nav-btn next">11주차: 포트폴리오 브랜딩 &rarr;</Link>
             </div>
           </div>
         </div>

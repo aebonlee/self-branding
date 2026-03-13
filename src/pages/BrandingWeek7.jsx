@@ -302,14 +302,15 @@ const BrandingWeek7 = () => {
             <div className="info-box tip">
               <h3>다음 주 예고</h3>
               <p>
-                8주차에서는 기업 홍보와 PR에 대해 배웁니다. 보도자료 작성법, 미디어 관계 구축,
-                위기관리 커뮤니케이션 등 전문적인 PR 전략을 다룹니다.
+                8주차는 중간고사입니다. 1~7주차에서 배운 셀프 브랜딩 기초 이론과 실전 전략의
+                이해도를 종합적으로 평가합니다. 주차별 핵심 개념과 프레임워크를 복습하고,
+                실습 과제를 다시 점검해 보세요!
               </p>
             </div>
 
             <div className="lesson-nav">
               <Link to="/lessons/sns-marketing" className="lesson-nav-btn prev">&larr; 6주차: SNS 마케팅</Link>
-              <Link to="/lessons/corporate-pr" className="lesson-nav-btn next">8주차: 기업 홍보 &amp; PR &rarr;</Link>
+              <Link to="/lessons/midterm" className="lesson-nav-btn next">8주차: 중간고사 &rarr;</Link>
             </div>
           </div>
         </div>

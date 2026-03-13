@@ -33,7 +33,7 @@
 **진입점 & 설정:**
 - `src/main.jsx` — React DOM createRoot, StrictMode, BrowserRouter (basename="/self-branding")
 - `src/App.jsx` — 4개 Provider 감싸기 (Auth → Theme → Language → Toast) + PublicLayout
-- `src/config/site.js` — 셀프 브랜딩 전용 네비게이션 메뉴 (브랜딩기초, 12주차, 마케팅도구, 강의자료, 참고자료, 커뮤니티), 브랜드 파츠 (Self/Brand/ing), 푸터 링크
+- `src/config/site.js` — 셀프 브랜딩 전용 네비게이션 메뉴 (브랜딩기초, 15주차, 마케팅도구, 강의자료, 참고자료, 커뮤니티), 브랜드 파츠 (Self/Brand/ing), 푸터 링크
 - `src/config/admin.js` — 관리자 이메일 설정
 
 **Contexts (4개, koreatech 동일 패턴):**
@@ -84,16 +84,16 @@
 #### Phase 5: 학습 콘텐츠 페이지 (새로 작성)
 
 **Home (1개):**
-- `src/pages/Home.jsx` — 랜딩 페이지 (Hero, 브랜딩소개, 12주차 카드그리드, 마케팅도구 카드그리드)
+- `src/pages/Home.jsx` — 랜딩 페이지 (Hero, 브랜딩소개, 15주차 카드그리드, 마케팅도구 카드그리드)
 
 **브랜딩 기초 (4개):**
 - `src/pages/WhatIsBranding.jsx` — 셀프 브랜딩 정의, 필요성, 기업/개인 브랜딩 차이
-- `src/pages/LearningRoadmap.jsx` — 12주 학습 로드맵 시각화
+- `src/pages/LearningRoadmap.jsx` — 15주 학습 로드맵 시각화 (5단계 Phase)
 - `src/pages/Syllabus.jsx` — 강의계획서 (주차별 상세 내용)
 - `src/pages/PracticeGuide.jsx` — 실습 안내 (도구, 과제 설명)
 
-**12주차 커리큘럼 (13개):**
-- `src/pages/BrandingLesson.jsx` — 커리큘럼 허브 페이지 (12주 카드 그리드)
+**15주차 커리큘럼 (16개):**
+- `src/pages/BrandingLesson.jsx` — 커리큘럼 허브 페이지 (15주 카드 그리드, 5단계 Phase)
 - `src/pages/BrandingWeek1.jsx` — 1주차: 셀프 브랜딩 개론
 - `src/pages/BrandingWeek2.jsx` — 2주차: 자기분석 & 핵심가치
 - `src/pages/BrandingWeek3.jsx` — 3주차: 타겟 오디언스 분석
@@ -101,11 +101,14 @@
 - `src/pages/BrandingWeek5.jsx` — 5주차: 디지털 마케팅 기초
 - `src/pages/BrandingWeek6.jsx` — 6주차: SNS 마케팅 전략
 - `src/pages/BrandingWeek7.jsx` — 7주차: 콘텐츠 마케팅
-- `src/pages/BrandingWeek8.jsx` — 8주차: 기업 홍보 & PR
-- `src/pages/BrandingWeek9.jsx` — 9주차: 개인 브랜딩 실전
-- `src/pages/BrandingWeek10.jsx` — 10주차: 포트폴리오 브랜딩
-- `src/pages/BrandingWeek11.jsx` — 11주차: 마케팅 분석 & KPI
-- `src/pages/BrandingWeek12.jsx` — 12주차: 종합 프로젝트
+- `src/pages/BrandingWeek8.jsx` — 8주차: 중간고사 (1~7주차 종합 평가)
+- `src/pages/BrandingWeek9.jsx` — 9주차: 기업 홍보 & PR
+- `src/pages/BrandingWeek10.jsx` — 10주차: 개인 브랜딩 실전
+- `src/pages/BrandingWeek11.jsx` — 11주차: 포트폴리오 브랜딩
+- `src/pages/BrandingWeek12.jsx` — 12주차: 마케팅 분석 & KPI
+- `src/pages/BrandingWeek13.jsx` — 13주차: 종합 프로젝트
+- `src/pages/BrandingWeek14.jsx` — 14주차: 프로젝트 발표 & 피드백
+- `src/pages/BrandingWeek15.jsx` — 15주차: 기말고사 (9~14주차 종합 평가)
 
 **마케팅 도구 가이드 (9개):**
 - `src/pages/MarketingToolsHome.jsx` — 마케팅 도구 허브 페이지
@@ -157,11 +160,14 @@
 | `/lessons/digital-marketing` | BrandingWeek5 | - |
 | `/lessons/sns-marketing` | BrandingWeek6 | - |
 | `/lessons/content-marketing` | BrandingWeek7 | - |
-| `/lessons/corporate-pr` | BrandingWeek8 | - |
-| `/lessons/personal-branding` | BrandingWeek9 | - |
-| `/lessons/portfolio-branding` | BrandingWeek10 | - |
-| `/lessons/marketing-analytics` | BrandingWeek11 | - |
-| `/lessons/final-project` | BrandingWeek12 | - |
+| `/lessons/midterm` | BrandingWeek8 | - |
+| `/lessons/corporate-pr` | BrandingWeek9 | - |
+| `/lessons/personal-branding` | BrandingWeek10 | - |
+| `/lessons/portfolio-branding` | BrandingWeek11 | - |
+| `/lessons/marketing-analytics` | BrandingWeek12 | - |
+| `/lessons/final-project` | BrandingWeek13 | - |
+| `/lessons/presentation` | BrandingWeek14 | - |
+| `/lessons/final-exam` | BrandingWeek15 | - |
 | `/tools` | MarketingToolsHome (허브) | - |
 | `/tools/instagram` | ToolInstagram | - |
 | `/tools/youtube` | ToolYouTube | - |
@@ -264,6 +270,7 @@ D:\self-branding/
 | 2026-03-13 | `e81bca4` | fix: ErrorBoundary 추가, 빈페이지 문제 분석 및 재배포 |
 | 2026-03-13 | `64056d3` | chore: sharp devDependency 추가 (OG 이미지 변환용) |
 | 2026-03-14 | — | fix: useAOS 개선 — ScrollToTop, fallback 타이머, 라우트 감지 추가 |
+| 2026-03-14 | — | feat: 12주→15주 커리큘럼 확장 (중간고사 8주, 발표 14주, 기말고사 15주 추가) |
 
 ---
 
@@ -324,6 +331,51 @@ D:\self-branding/
    - 라우트 변경 시 이전 `aos-animate` 클래스 초기화 (애니메이션 재생)
 2. **ErrorBoundary 컴포넌트 추가** — 런타임 에러 시 오류 메시지 표시
 3. **클린 빌드 후 재배포**
+
+---
+
+## 12주→15주 커리큘럼 확장 (2026-03-14)
+
+### 변경 개요
+
+한국 대학 학기 형식(15주)에 맞춰 커리큘럼을 12주에서 15주로 확장.
+- **8주차**: 중간고사 신규 추가 (1~7주차 범위)
+- **14주차**: 프로젝트 발표 & 피드백 신규 추가
+- **15주차**: 기말고사 신규 추가 (9~14주차 범위)
+- 기존 8~12주차 내용은 9~13주차로 이동
+- 평가 비율: 중간고사 30% + 실습과제 30% + 기말고사 40%
+
+### 수정 파일 (총 20개)
+
+| 카테고리 | 파일 | 변경 내용 |
+|----------|------|-----------|
+| 신규 생성 | `BrandingWeek13.jsx` | 구12주차(종합 프로젝트) 이동, 주차번호 갱신 |
+| 신규 생성 | `BrandingWeek14.jsx` | 프로젝트 발표 & 피드백 (완전 신규) |
+| 신규 생성 | `BrandingWeek15.jsx` | 기말고사 (완전 신규) |
+| 콘텐츠 이동 | `BrandingWeek8.jsx` | 기업 홍보 → 중간고사로 전면 교체 |
+| 콘텐츠 이동 | `BrandingWeek9.jsx` | 개인 브랜딩 → 기업 홍보(구8주) |
+| 콘텐츠 이동 | `BrandingWeek10.jsx` | 포트폴리오 → 개인 브랜딩(구9주) |
+| 콘텐츠 이동 | `BrandingWeek11.jsx` | 마케팅 분석 → 포트폴리오(구10주) |
+| 콘텐츠 이동 | `BrandingWeek12.jsx` | 종합 프로젝트 → 마케팅 분석(구11주) |
+| 네비 수정 | `BrandingWeek7.jsx` | 다음 주 예고 → 중간고사, next 링크 수정 |
+| 라우팅 | `PublicLayout.jsx` | lazy import 3개 추가, route 매핑 15개 |
+| 설정 | `site.js` | 드롭다운 12→15개 |
+| 번역 | `translations.js` | week8~15 키 재매핑 (ko/en) |
+| 허브 | `BrandingLesson.jsx` | 15개 카드, 5단계 Phase |
+| 홈 | `Home.jsx` | 15개 카드, "15주 커리큘럼" |
+| 계획서 | `Syllabus.jsx` | 15행 테이블, 평가 비율 수정 |
+| 로드맵 | `LearningRoadmap.jsx` | 5단계 Phase |
+| 실습 | `PracticeGuide.jsx` | 8개 실습 카드 (시험 포함) |
+| 문서 | `DEVLOG.md` | 이 항목 |
+| 문서 | `README.md` | 15주 커리큘럼 테이블 |
+
+### 구현 전략
+
+콘텐츠 유실 방지를 위해 **역순 캐스케이드** 적용:
+1. Phase 1: 신규 파일 생성 (13, 14, 15)
+2. Phase 2: 역순 콘텐츠 이동 (12→11→10→9→8)
+3. Phase 3: 지원 파일 수정 (라우팅, 설정, 번역, 허브 페이지 등)
+4. Phase 4: 문서화 & 빌드 검증
 
 ---
 

@@ -24,10 +24,10 @@ const Syllabus = () => {
               <table className="lesson-table">
                 <tbody>
                   <tr><th>과목명</th><td>셀프 브랜딩 마케팅</td></tr>
-                  <tr><th>학습 기간</th><td>12주 (주 1회, 총 12차시)</td></tr>
+                  <tr><th>학습 기간</th><td>15주 (주 1회, 총 15차시)</td></tr>
                   <tr><th>학습 대상</th><td>마케팅/브랜딩에 관심 있는 누구나</td></tr>
                   <tr><th>학습 목표</th><td>개인/기업 브랜딩 전략 수립 및 실행 능력 배양</td></tr>
-                  <tr><th>평가 방식</th><td>실습과제 60% + 최종 프로젝트 40%</td></tr>
+                  <tr><th>평가 방식</th><td>중간고사 30% + 실습과제 30% + 기말고사 40%</td></tr>
                 </tbody>
               </table>
             </div>
@@ -45,12 +45,14 @@ const Syllabus = () => {
                 <tr><td>5</td><td>디지털 마케팅</td><td>SEO, SEM, 퍼널 마케팅</td><td>SEO 분석 리포트</td></tr>
                 <tr><td>6</td><td>SNS 마케팅</td><td>Instagram, YouTube, TikTok</td><td>SNS 콘텐츠 기획안</td></tr>
                 <tr><td>7</td><td>콘텐츠 마케팅</td><td>블로그, 뉴스레터, 스토리텔링</td><td>콘텐츠 캘린더</td></tr>
-                <tr className="exam-row"><td>중간</td><td colSpan="3">중간 점검 — 브랜드 전략 발표</td></tr>
-                <tr><td>8</td><td>기업 홍보 & PR</td><td>보도자료, 미디어, 위기관리</td><td>보도자료 작성</td></tr>
-                <tr><td>9</td><td>개인 브랜딩 실전</td><td>온라인 프레즌스, 네트워킹</td><td>LinkedIn 프로필 최적화</td></tr>
-                <tr><td>10</td><td>포트폴리오 브랜딩</td><td>이력서, 웹사이트 제작</td><td>포트폴리오 초안</td></tr>
-                <tr><td>11</td><td>마케팅 분석</td><td>GA4, ROI, A/B 테스트</td><td>분석 대시보드</td></tr>
-                <tr className="exam-row"><td>12</td><td colSpan="3">최종 프로젝트 발표 — 개인/기업 브랜딩 프로젝트</td></tr>
+                <tr className="exam-row"><td>8</td><td colSpan="3">중간고사 — 1~7주차 학습 내용 종합 평가</td></tr>
+                <tr><td>9</td><td>기업 홍보 & PR</td><td>보도자료, 미디어, 위기관리</td><td>보도자료 작성</td></tr>
+                <tr><td>10</td><td>개인 브랜딩 실전</td><td>온라인 프레즌스, 네트워킹</td><td>LinkedIn 프로필 최적화</td></tr>
+                <tr><td>11</td><td>포트폴리오 브랜딩</td><td>이력서, 웹사이트 제작</td><td>포트폴리오 초안</td></tr>
+                <tr><td>12</td><td>마케팅 분석</td><td>GA4, ROI, A/B 테스트</td><td>분석 대시보드</td></tr>
+                <tr><td>13</td><td>종합 프로젝트</td><td>브랜딩 프로젝트 기획~실행</td><td>프로젝트 보고서</td></tr>
+                <tr><td>14</td><td>프로젝트 발표</td><td>발표, 동료 피드백, 개선 계획</td><td>발표 자료 제출</td></tr>
+                <tr className="exam-row"><td>15</td><td colSpan="3">기말고사 — 9~14주차 심화 과정 종합 평가</td></tr>
               </tbody>
             </table>
 
