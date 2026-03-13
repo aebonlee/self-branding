@@ -261,7 +261,9 @@ D:\self-branding/
 | 2026-03-13 | `9c051ac` | docs: 개발일지 업데이트 및 Supabase SQL 설정 파일 추가 |
 | 2026-03-13 | `ebe5f7a` | feat: Open Graph 메타 태그 추가 및 BASE URL 수정 |
 | 2026-03-13 | `9d1f0e1` | docs: README.md 작성, Supabase 설정 점검 및 수정 |
-| 2026-03-13 | — | fix: ErrorBoundary 추가, 빈페이지 문제 분석 및 재배포 |
+| 2026-03-13 | `e81bca4` | fix: ErrorBoundary 추가, 빈페이지 문제 분석 및 재배포 |
+| 2026-03-13 | `64056d3` | chore: sharp devDependency 추가 (OG 이미지 변환용) |
+| 2026-03-14 | — | fix: useAOS 개선 — ScrollToTop, fallback 타이머, 라우트 감지 추가 |
 
 ---
 
@@ -308,10 +310,20 @@ D:\self-branding/
 - GitHub Pages CDN 전파 지연: HTML이 먼저 갱신되고 JS 청크가 아직 전파되지 않은 상태에서 접속 시 빈페이지 발생 가능
 - 브라우저 캐시: 이전 배포의 index.html이 캐시되어 존재하지 않는 청크 해시 참조
 
+### 근본 원인
+- **ScrollToTop 미구현**: SPA에서 페이지 이동 시 스크롤 위치가 유지되어, 새 페이지의 `[data-aos]` 요소가 뷰포트 밖에 위치
+- **AOS IntersectionObserver 미트리거**: `opacity: 0` 상태의 요소가 뷰포트에 들어오지 않으면 영원히 보이지 않음
+- 1-3주차는 짧은 페이지라 대부분 뷰포트 안에 있어 정상 작동, 4주차부터 긴 콘텐츠로 인해 문제 발생
+
 ### 해결 조치
-1. **ErrorBoundary 컴포넌트 추가** — 런타임 에러 발생 시 "페이지 로딩 오류" 메시지와 새로고침 버튼 표시 (빈페이지 대신)
-2. **클린 빌드 후 재배포** — `rm -rf dist && npm run build && npx gh-pages -d dist`
-3. **CDN 전파 완료 확인** — 54/54 에셋 HTTP 200 확인 후 서비스 검증
+1. **useAOS 개선** (`src/hooks/useAOS.js`)
+   - `useLocation()` 감지하여 라우트 변경 시 `window.scrollTo(0, 0)` 실행
+   - `threshold: 0.1 → 0.05`, `rootMargin: -50px → 0px` (더 민감하게)
+   - DOM 렌더링 보장을 위해 50ms 딜레이 후 observe 시작
+   - **1초 fallback 타이머** — AOS가 실패해도 콘텐츠 강제 표시
+   - 라우트 변경 시 이전 `aos-animate` 클래스 초기화 (애니메이션 재생)
+2. **ErrorBoundary 컴포넌트 추가** — 런타임 에러 시 오류 메시지 표시
+3. **클린 빌드 후 재배포**
 
 ---
 
