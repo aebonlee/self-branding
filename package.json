@@ -1,5 +1,7 @@
 {
   "name": "self-branding",
+  "description": "셀프 브랜딩",
+  "homepage": "https://self-branding.dreamitbiz.com",
   "private": true,
   "version": "1.0.0",
   "type": "module",
