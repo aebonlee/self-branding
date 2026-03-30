@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 브랜딩 기초 (Main) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/branding/what-is-branding</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/branding/roadmap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/branding/syllabus</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/branding/practice-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 15주차 커리큘럼 (Main index) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 15주차 커리큘럼 (Secondary - individual lessons) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/intro</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/self-analysis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/target-audience</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/brand-identity</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/digital-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/sns-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/content-marketing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/midterm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/corporate-pr</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/personal-branding</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/portfolio-branding</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/marketing-analytics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/final-project</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/presentation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lessons/final-exam</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- 마케팅 도구 (Main index) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 마케팅 도구 (Secondary - individual tools) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/instagram</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/youtube</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/blog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/linkedin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/email</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/design</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/tools/ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- 강의자료 (Main) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/lectures</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 참고자료 (Main) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/references</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 커뮤니티 (Community) -->
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/community/board</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/community/gallery</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/community/portfolio</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://self-branding.dreamitbiz.com/community/websites</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
