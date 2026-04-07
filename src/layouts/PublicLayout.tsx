@@ -4,6 +4,8 @@ import AuthGuard from '../components/AuthGuard';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
+import { LicenseProvider } from '../components/LicenseGuard';
+import LockOverlay from '../components/LockOverlay';
 import useCodeCopy from '../hooks/useCodeCopy';
 import useTableScroller from '../hooks/useTableScroller';
 
@@ -84,6 +86,7 @@ const PublicLayout = () => {
   useTableScroller();
 
   return (
+    <LicenseProvider>
     <div className="site-wrapper">
       <Navbar />
       <main className="site-main">
@@ -177,7 +180,9 @@ const PublicLayout = () => {
         </ErrorBoundary>
       </main>
       <Footer />
+      <LockOverlay />
     </div>
+    </LicenseProvider>
   );
 };
 
