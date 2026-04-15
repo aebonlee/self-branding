@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import getSupabase, { updateLastLogin, setSharedSession, getSharedSession, clearSharedSession } from '../utils/supabase';
-import { getProfile, updateProfile, signOut as authSignOut } from '../utils/auth';
+import { getProfile, updateProfile, signOut as authSignOut, signInWithGoogle, signInWithKakao } from '../utils/auth';
 import { ADMIN_EMAILS } from '../config/admin';
 
 interface UserType {
@@ -35,6 +35,8 @@ interface AuthContextType {
   isAdmin: boolean;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
+  signInWithGoogle: typeof signInWithGoogle;
+  signInWithKakao: typeof signInWithKakao;
   accountBlock: AccountBlockType | null;
   clearAccountBlock: () => void;
 }
@@ -185,6 +187,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       isAdmin,
       signOut,
       refreshProfile,
+      signInWithGoogle,
+      signInWithKakao,
       accountBlock,
       clearAccountBlock: () => setAccountBlock(null),
     }}>
