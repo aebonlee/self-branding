@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AuthGuard from '../components/AuthGuard';
+import AdminGuard from '../components/AdminGuard';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -73,6 +74,7 @@ const LectureWrite = lazy(() => import('../pages/LectureWrite'));
 
 // 관리자 & 기타
 const Admin = lazy(() => import('../pages/Admin'));
+const AdminDashboard = lazy(() => import('../pages/admin/AdminDashboard'));
 const NotFound = lazy(() => import('../pages/NotFound'));
 
 const Loading = () => (
@@ -172,6 +174,7 @@ const PublicLayout = () => {
 
             {/* Admin */}
             <Route path="/admin" element={<AuthGuard><Admin /></AuthGuard>} />
+            <Route path="/admin/dashboard/*" element={<AdminGuard><AdminDashboard /></AdminGuard>} />
 
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
