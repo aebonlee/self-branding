@@ -4,7 +4,7 @@ import { getProfile, updateProfile, signOut as authSignOut, signInWithGoogle, si
 import { ADMIN_EMAILS } from '../config/admin';
 import { useIdleTimeout } from '../hooks/useIdleTimeout';
 import ProfileCompleteModal from '../components/ProfileCompleteModal';
-
+import type { Session, User } from '@supabase/supabase-js';
 import PaymentNudgePopup from '../components/PaymentNudgePopup';
 interface UserType {
   id: string;
@@ -115,8 +115,8 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       return;
     }
 
-    const { data: { subscription } } = client.auth.onAuthStateChange(async (event: string, session: { user?: UserType } | null) => {
-      const u = (session?.user as UserType) ?? null;
+    const { data: { subscription } } = client.auth.onAuthStateChange(async (event, session: Session | null) => {
+      const u = (session?.user as UserType | undefined) ?? null;
       setUser(u);
       if (u) {
         loadProfile(u);
@@ -213,7 +213,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
         <ProfileCompleteModal user={user as any} onComplete={refreshProfile} />
       )}
     {isLoggedIn && user && !needsProfileCompletion && (
-      <PaymentNudgePopup user={user} siteSlug="self-branding" />
+      <PaymentNudgePopup user={user as User} siteSlug="self-branding" />
     )}
     </AuthContext.Provider>
   );
