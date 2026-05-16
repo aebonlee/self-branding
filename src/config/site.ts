@@ -16,7 +16,6 @@ const site = {
   },
   themeColor: '#0046C8',
   menuItems: [
-    { path: '/', labelKey: 'nav.home' },
     {
       labelKey: 'site.nav.branding',
       path: '/branding/what-is-branding',
@@ -80,7 +79,6 @@ const site = {
     }
   ],
   footerLinks: [
-    { path: '/', labelKey: 'nav.home' },
     { path: '/branding/what-is-branding', labelKey: 'site.nav.branding' },
     { path: '/lessons', labelKey: 'site.nav.lessons' },
     { path: '/tools', labelKey: 'site.nav.tools' },
