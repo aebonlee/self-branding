@@ -16,6 +16,7 @@ const site = {
   },
   themeColor: '#0046C8',
   menuItems: [
+    { path: '/about', labelKey: 'nav.about' },
     {
       labelKey: 'site.nav.branding',
       path: '/branding/what-is-branding',

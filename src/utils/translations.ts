@@ -2,6 +2,7 @@ export const translations = {
   ko: {
     nav: {
       home: '홈',
+          about: '소개',
     },
     footer: {
       tagline: '셀프 브랜딩 마케팅 종합 학습 플랫폼',
@@ -383,6 +384,7 @@ export const translations = {
   en: {
     nav: {
       home: 'Home',
+          about: 'About',
     },
     footer: {
       tagline: 'Self-Branding Marketing Comprehensive Learning Platform',
